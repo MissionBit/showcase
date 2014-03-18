@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<title>Door Game</title>
+<h1 style=color:red>Pick a door</h1>
+<h2> There are four doors. Only one door leads to the way out. The last door will choose a random door.
+</h2>
+<script type="text/javascript">
+var urls = [
+    "Bluedoor.html",
+    "Browndoor.html",
+    "Reddoor.html",
+    "Whitedoor.html"
+];
+
+function goSomewhere() {
+    var url= urls[Math.floor(Math.random()*urls.length)];
+    window.location=url;
+}
+</script>
+<link rel="stylesheet" href="doorgame.css">
+<link href='http://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css'>
+<body>
+<p>
+    <a href="Browndoor.html">
+       <img src="img/simple-home-clipartsimple-brown-door-design-free-clip-art-honduras-home-business-gbnhsojr.png" width="200"> </a>
+    <a href="Whitedoor.html"><img src="img/cartoon-door-006.jpg" width="200"></a>
+    <a href="Reddoor.html"><img src="img/red-door.svg" width="200"></a>
+    <a href="Bluedoor.html"><img src="img/DOOR.jpg" width="200"></a>
+    <a href="#" onClick="goSomewhere(); return false;"><img src="img/question-mark.jpg" width="200" height="300"></a>
+</p>
+</body>
+</html>
