@@ -1,0 +1,15 @@
+body {
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    font-size:20px;
+    text-shadow:3px 3px 2px black;
+    font-family: 'Eater', cursive;
+    background-color:black;
+}
+a {
+    color:red;
+}
+a:visited {
+    color:brown;
+}
