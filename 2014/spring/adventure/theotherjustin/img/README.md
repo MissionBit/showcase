@@ -4,3 +4,7 @@
 * http://www.chaletwhymper.co.uk/images/thumb/FallingOffCliffWeb.jpg
 * http://static.fjcdn.com/pictures/Angry_5a4dce_2836232.jpg
 * http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-let-it-go-40.png
+* http://jaypgreene.files.wordpress.com/2011/05/now-panic-freak-out1.gif
+* http://plumeriaswimwear.com/wp-content/uploads/2013/10/tropical-beach-wallpaper-1920x1200.jpg
+* http://fc03.deviantart.net/fs38/f/2008/349/0/0/FREE_Snowy_Background_by_YuniNaoki.jpg
+* http://cf.badassdigest.com/_uploads/images/35767/disney-frozen-ice-castle-wallpaper__span.jpg

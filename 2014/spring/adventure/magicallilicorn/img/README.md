@@ -7,3 +7,6 @@
 * http://pngimg.com/upload/img1382472173.png
 * http://www.todevahouse.com/wp-content/uploads/2013/12/simple-home-clipartsimple-brown-door-design-free-clip-art-honduras-home-business-gbnhsojr.png
 * http://www.how-to-draw-funny-cartoons.com/image-files/cartoon-door-006.jpg
+* http://www.clker.com/cliparts/b/T/q/f/u/Y/red-door.svg
+* http://www.qacps.k12.md.us/ces/clipart/Carson%20Dellosa%20Clipart/Carson%20Dellosa%20Letters%20and%20Numbers/Images/Color%20Images/Clip%20Art/DOOR.jpg
+* http://www.calgunlaws.com/wp-content/uploads/2014/01/question-mark.jpg
