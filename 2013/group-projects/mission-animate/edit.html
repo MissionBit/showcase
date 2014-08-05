@@ -1,0 +1,142 @@
+ <!doctype html>
+<html>
+<head>
+  <title>Mission Animate - Create</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- http://getbootstrap.com/ -->
+  <link rel="stylesheet" href="libraries/bootstrap-3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libraries/bootstrap-3.0.2/css/bootstrap-theme.min.css">
+  <!-- http://fontawesome.io/ -->
+  <link rel="stylesheet" href="libraries/font-awesome-4.0.3/css/font-awesome.min.css">
+  <!-- -->
+  <link rel="stylesheet" href="libraries/bgrins-spectrum-28ab793/spectrum.css"></script>
+  <!-- our css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Somehow this fixes a Firefox bug! -->
+  <style>#svg .selected { filter: url("#glow"); }</style>
+</head>
+<body id="ma">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand fancy cur"><img src="logo.png"></img> Mission Animate</div>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html" class="fancy cur">Home</a></li>
+          <li class="active"><a href="edit.html" class="fancy cur">Create</a></li>
+          <li class="dropdown fancy cur">
+              <a href="other.html" class="dropdown-toggle fancy cur" data-toggle="dropdown">Other<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="help.html">Help</a></li>
+                <li><a href="changes.html">Changelog</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul></li>
+            <li><a href="showcase.html" class="fancy cur">Showcase</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div>
+  </div>
+  <div class="container">
+    <svg id="svg" width="500" height="500" class="draw">
+      <defs>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+          <feMerge>
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <!-- This rect is on the bottom for unselecting -->
+      <rect x="0" y="0" width="500" height="500" fill="rgba(0,0,0,0)" class="mouse-area"/>
+      <!-- This group is where we put the graphics -->
+      <g class="draw-area"></g>
+      <!-- This rect is usually on top for the drawing tools -->
+      <rect x="0" y="0" width="500" height="500" fill="rgba(0,0,0,0)" class="drag-area"/>
+    </svg>
+    <div class="tools">
+      <button type="button" class="btn btn-default back" title="Go Back" data-bind="enable: frames.hasPrevFrame(), click: prevFrame"> <i class="fa fa-caret-left"></i> </button>
+      <button type="button" class="btn btn-default forward" title="Go Forward" data-bind="enable: frames.hasNextFrame(), click: nextFrame"> <i class="fa fa-caret-right"></i> </button>
+      <button type="button" class="btn btn-default insert" title="Insert Frame" data-bind="click: insertFrame"> <i class="fa fa-plus-square"></i> </button>
+      <button type="button" class="btn btn-default delete" title="Delete Frame" data-bind="click: deleteFrame"> <i class="glyphicon glyphicon-trash"></i> </button>
+      <button type="button" class="btn btn-default mouse" title="Mouse" data-tool="mouse" data-bind="css: toolClasses($element), click: changeTool"> <i class="fa fa-location-arrow"></i> </button>
+      <button type="button" class="btn btn-default pencil" data-tool="pencil" data-bind="css: toolClasses($element), click: changeTool" title="Pencil"> <i class="fa fa-pencil"></i> </button>
+      <button type="button" class="btn btn-default line" data-tool="line" data-bind="css: toolClasses($element), click: changeTool" title="Line"> <i class="fa fa-minus"></i> </button>
+      <button type="button" class="btn btn-default eraser" data-tool="eraser" data-bind="css: toolClasses($element), click: changeTool" title="Eraser"> <i class="fa fa-eraser"></i> </button>
+      <button type="button" class="btn btn-default undo" title="Undo" data-bind="enable: frames.currentFrame().canUndo(), click: undo"> <i class="fa fa-undo"></i> </button>
+      <button type="button" class="btn btn-default redo" title="Redo" data-bind="enable: frames.currentFrame().canRedo(), click: redo"> <i class="fa fa-repeat"></i> </button>
+      <button type="button" class="btn btn-default save" title="Save" data-bind="click: save"> <i class="fa fa-save"></i> </button>
+      <button type="button" class="btn btn-default load" title="Load" data-bind="click: load"> <i class="fa fa-folder-open-o"></i> </button>
+      <input type="color" id="pencil-color" title="Change Color" class="btn-default" data-bind="value: stroke" />
+      <input type="range" min="1" max="30" data-bind="value: strokeWidth" class="strok-size"/>
+      <button type="button" class="btn btn-default download" title="Download GIF" data-bind="click: download"> <i class="fa fa-play"></i> </button>
+      <input type="file" id="load-file-input"/>
+    </div>
+    <div class="after-tools">
+      <div>
+        Frame [<span data-bind="text: frames.frameNum">n</span>/<span data-bind="text: frames.frameCount">n</span>]
+      </div>
+      <div class="cen cur large">
+        <p class="see">Need help? Go to <a href="help.html" class="link">this page!</a></p>
+        <a href="about.html" class="btn btn-primary btn-lg" role="button" class="cur"> If you see an error, or wanna send in an animation, email us here!</a>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Animation Preview</h4>
+          </div>
+          <div class="modal-body">
+            <h1 class="percent-done">0%</h1>
+            <img class="modal-img" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary download-button">Download</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </div><!-- /.container -->
+
+  <!-- http://jquery.com/ -->
+  <script src="libraries/jquery-2.0.3.min.js"></script>
+  <!-- http://knockoutjs.com/ -->
+  <script src="libraries/knockout-3.0.0.min.js"></script>
+  <!-- http://snapsvg.io/ -->
+  <script src="libraries/Snap.svg-0.1.0/dist/snap.svg-min.js"></script>
+  <!-- http://getbootstrap.com/ -->
+  <script src="libraries/bootstrap-3.0.2/js/bootstrap.min.js"></script>
+  <!-- https://github.com/eligrey/FileSaver.js -->
+  <script src="libraries/FileSaver-d8c81c1.js"></script>
+  <!-- http://bgrins.github.io/spectrum/ -->
+  <script src="libraries/bgrins-spectrum-28ab793/spectrum.js"></script>
+  <!-- https://code.google.com/p/canvg/ -->
+  <script src="libraries/canvg-1.3/rgbcolor.js"></script>
+  <script src="libraries/canvg-1.3/StackBlur.js"></script>
+  <script src="libraries/canvg-1.3/canvg.js"></script>
+  <!-- http://jnordberg.github.io/gif.js/ -->
+  <script src="libraries/gif.js-0.1.5/gif.js"></script>
+  <script src="libraries/gif.js-0.1.5/gif.worker.blob.js"></script>
+  <!-- https://github.com/ukyo/jsziptools -->
+  <script src="libraries/jsziptools-2.3.2/dist/jsziptools.min.js"></script>
+  <!-- our javascript -->
+  <script src="js/state-manager.js"></script>
+  <script src="js/frame-manager.js"></script>
+  <script src="js/persistence.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

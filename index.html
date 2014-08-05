@@ -1,0 +1,16 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<body>
+  {% for assignment in site.data.assignments %}
+  <h1>{{ assignment.name }}</h1>
+  <p>{{ assignment.description }}</p>
+  <ul>
+   {% for project in assignment.projects %}
+   <li><a href="{{ assignment.path }}/{{ project.path }}">{{ project.name }}</a></li>
+   {% endfor %}
+  </ul>
+  {% endfor %}
+</body>
+</html>

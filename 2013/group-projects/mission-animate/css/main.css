@@ -1,0 +1,108 @@
+body {
+	padding-top: 50px;
+	background-image: -webkit-linear-gradient(black, red);
+	background-image: linear-gradient(to top, red, black);
+	height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#svg {
+	display: block;
+	margin: 5px auto;
+	border: 1px solid black;
+}
+
+#svg .selected {
+	filter: url('#glow');
+}
+
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+.after-tools {
+	margin: 5px auto;
+	width: 500px;
+}
+
+.tools {
+	margin: 5px auto;
+	width: 500px;
+	user-select: none;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+#load-file-input {
+	visibility: hidden;
+}
+
+.tools i {
+	font-size: 40px;
+}
+.tools button {
+	margin-bottom: 5px;
+}
+
+#pencil-color {
+	margin-bottom: 5px;
+	padding: 5px 5px;
+	vertical-align: middle;
+	border-radius: 4px;
+	height: 54px;
+	width: 52px;
+	border: 1px solid #ccc;
+}
+#ma .fancy {
+	font-family: cursive;
+	color: yellow;
+}
+.welc {
+	font-size: 74px; color:lightgreen;
+}
+.cen {
+	text-align: center;
+}
+.intro {
+	font-size: 20px; color: yellow;
+}
+.draw {
+	background: white;
+}
+.cur {
+	font-family:cursive;
+}
+.xxlarge {
+	font-size: 60px
+}
+.xlarge {
+	font-size: 48px
+}
+.large {
+	font-size: 36px
+}
+.med {
+	font-size: 24px
+}
+.small {
+	font-size: 18px
+}
+.see {
+	color: white
+}
+.link {
+	color: blue;
+}
+.loading .modal-img {
+	display: none;
+}
+.percent-done {
+	display: none;
+}
+.loading .percent-done {
+	display: inline;
+}

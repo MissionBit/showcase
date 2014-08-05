@@ -1,0 +1,27 @@
+- name: Fall 2013 Group Projects
+  path: 2013/group-projects
+  description:
+    "Our very first Mission Bit class spent half of the semester working
+    on open-ended projects. A few of them are hard to demo online, but
+    here are some fun ones!"
+  projects:
+    - path: mission-animate
+      name: Mission Animate
+- name: Spring 2014 Adventure Games
+  path: 2014/spring/adventure
+  description:
+    "The Adventure Game project was one of the first projects in the
+    Spring 2014 semester where the students got to flex their creative
+    muscles. Building an adventure game in HTML was great motivation
+    for many of the students to dig deeper into CSS and gave them
+    the opportunity to think about how to structure a site with a
+    lot of separate pages."
+  projects:
+    - path: cjlim2007
+      name: "Chris's RPG"
+    - path: farrah0228
+      name: "Farrah's Winter Wonderland"
+    - path: magicallilicorn
+      name: "Lily's Escape"
+    - path: theotherjustin
+      name: "Justin's Frozen Adventure"
