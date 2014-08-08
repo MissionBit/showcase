@@ -7,8 +7,13 @@
   projects:
     - path: mission-animate
       name: Mission Animate
+      description:
+        "Draw your own animated GIFs!"
     - path: video-game
       name: Robot Dinosaur vs. Nazi Zombies
+      description:
+        "Help the Robot Dinosaur defeat all of the Nazi Zombies with its
+        laser beam!"
 - name: Spring 2014 Adventure Games
   path: 2014/spring/adventure
   description:
@@ -27,3 +32,22 @@
       name: "Lily's Escape"
     - path: theotherjustin
       name: "Justin's Frozen Adventure"
+- name: Spring 2014 Group Projects
+  path: 2014/spring/group-projects
+  description:
+    "For their end of semester projects, most of the groups decided to
+    build games of their own design!"
+  projects:
+    - path: food-stacker
+      name: Food Stacker
+      description:
+        "Catch the good food and avoid the bad stuff.
+        Works on mobile devices too!"
+    - path: operation-peach
+      name: Operation Peach
+      description:
+        "Help Princess Peach escape the castle on her own!"
+    - path: veggie-jump
+      name: "Endless Jump"
+      description:
+        "A crazy endless runner. Can you get over 9000?"

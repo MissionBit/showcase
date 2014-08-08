@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="peach__s_castle_wip_by_popabeat-d363aop" tilewidth="32" tileheight="32">
+  <image source="../peach__s_castle_wip_by_popabeat-d363aop.png" width="639" height="380"/>
+ </tileset>
+ <tileset firstgid="210" name="imgres-1" tilewidth="32" tileheight="32">
+  <image source="../imgres-1.jpg" width="225" height="225"/>
+ </tileset>
+ <tileset firstgid="259" name="Gold_Brick_Artwork_-_New_Super_Mario_Bros._2" tilewidth="32" tileheight="32">
+  <image source="../Gold_Brick_Artwork_-_New_Super_Mario_Bros._2.png" width="1751" height="1748"/>
+ </tileset>
+ <tileset firstgid="3175" name="Gold_Brick_Artwork_-_New_Super_Mario_Bros._2" tilewidth="32" tileheight="32">
+  <image source="../Gold_Brick_Artwork_-_New_Super_Mario_Bros._2.png" width="1751" height="1748"/>
+ </tileset>
+ <tileset firstgid="6091" name="Gold_Brick_Artwork_-_New_Super_Mario_Bros._2" tilewidth="32" tileheight="32">
+  <image source="../Gold_Brick_Artwork_-_New_Super_Mario_Bros._2.png" width="1751" height="1748"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2kW3FFcUhuG+F5fg7u4OAYK7u7sFTXAS3N3d3d3dXYJ7IARpXEPwBOe9g/oHxTpdZ33v6mdSZ/Vgz/Zg+3xKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKWVHF3ARl3AZf+IKrlry5rX+wjX8jeu4gZu4Zcmb1/LjNu7gLu7hPh5Y8ua1HuIRHuMJnuIZ/rHkzWs9x794gZd4hdd4Y8mb13qLd/gP/+M9PuCjJW9e6xM+4wu+hnwI4ofgIDvevJYNu6INMzjZsCvaMIOT3+f9XdHv8/4MTjbsijbM4GTDrmjDDE427Io2zODk5q4Y8pdghEJohEFYhEN4REBEREJk/IAoiIpoiI4YiGlwBtO5uSvGQmzEQVzEQ3wkQEIkQmIkQVIkQ3KkQEqkQmqkMTiD6dzcFdMiHdIjAzIiEzIjC7IiG7IjB3IiF35EbuRBXvxkcAbT+X3u7Yr5kB8FUBCFUBhFUBTFUBwlUBKlUBplUBblUB4VDM5gOjd3xYqohMqogqqohuqogZqohdqog7qoh/pogIZohMYGZzCdm7tiEzRFM/yM5miBlmiF1miDX/Ar2qId2qMDOqITOhucwXRu7opd8Bt+R1d0Q3f0QE/0Qm/0QV/0Q38MwEAMwmAMMTiD6dzcFYdiGIZjBEZiFEZjDMZiHMZjAiZiEiZjCqZiGqYbnMF0bu6KMzATszAbczAX8zAfC7AQi7AYS7AUy7AcK7ASqwzOYDo3d8XVWIO1WIf12ICN2ITN2IKt2Ibt2IGd2IXd2IO9Bmcwnd/n3q64D/txAAdxCIdxBEdxDH/gOE7gJE7hNM7gLM7hvMEZTGfDrmjDDE427Io2zOBkw65owwxONuyKNszgFEi3trrfDaxbW93vBtat7fd481qBdGur+93AurXV/W5g3drqfjewbm11v+vzfQN95O2F
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2UduFEEYQOEORwCTk7ENXIWccQLuQM457EinIGecgB3pFOSME3ACHgsvmGmLblFjY9X7pLdpjf5SdUmjkjpJJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEnSVLYjTZKdtIt20x7aS/toPx2gg3SIDtMROkrH6DidoJN0ik6n4eedobPpZL+liXOZvV6hq3SNrtMNukm36Dbdobt0j+7TA+qhXuqjfhqgh2n4eY/ocUTn8ZK9vqLX9Ibe0jt6Tx/oI32iz/SFvtI3GqQhGqYRGqXvafh5P+hnROcxLUuS6dREM2gmzaLZNIfm0jyaTwtoIS2iZlpMLdRKbbQkCz9vKS3LJvstTZzl7HUFraRVtJrW0FpaR+tpA22kTbSZtlA7dVAndVE3bc3Cz9tG2yM6jx722kt91E8D2fjPGlWZ9WMxyF6HaJhGaDQrflbl/Y4p89uy68eiOed/m1qoldry4meNOo+y68einb12UCd1UXde/KzqWYz52+/Lrh+Lc+z1PF2gi3QpL37WqPMou34snrDXp/SMntOLvPjZeO/7X/yeV3b9WFS9X4Ve2/vVn6rer0LyflWv6v0qJO9X9arer0LyflWv6v0qJO9X9bxf/V9CfqeonRVydixCfqeonRVydiyasnDfKWpnhZwdi5DfKWpnhZwtSZIkaWr4BaNMouY=
+  </data>
+ </layer>
+</map>
