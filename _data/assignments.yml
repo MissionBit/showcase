@@ -7,6 +7,8 @@
   projects:
     - path: mission-animate
       name: Mission Animate
+    - path: video-game
+      name: Robot Dinosaur vs. Nazi Zombies
 - name: Spring 2014 Adventure Games
   path: 2014/spring/adventure
   description:

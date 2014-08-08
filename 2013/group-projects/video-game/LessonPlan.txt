@@ -1,0 +1,19 @@
+Lesson Plan
+
+1) Add gamelayer, dinosaur player and background to cocos2d.js
+2) In game layer, schedule update, set keyboard enabled, set shared game layer and initialze keys array
+3) Initialize DinosaurPlayer.js
+4) define _player and _ground in GameLayer.js and add DinosurPlayer to GameLayer.js
+5) Add background variable to Resources.js
+6) Intitialize Background.js
+7) define _backgorund in GameLayer.js and add background
+8) Write update in GameLayer.js
+9) Get pos, Write the if moving right for DinosaurPlayer.js w/o the setflipped, and set pos
+10) Have the students figure out how to move left
+11) Write the set flipped for moving left
+12) Have the students figure out how to add flipped for moving right
+13) define _onGround and _jumpVelocity for DinosaurPlayer.js
+14) Have them write if on ground and up, set on ground to false and add a jump velocity
+15) add check for on ground and have the pos.y change by jump velocity
+16) have jump velocity decrease by an amount each time
+17) have check for landing on ground again
