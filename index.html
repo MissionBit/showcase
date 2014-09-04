@@ -2,20 +2,48 @@
 ---
 <!DOCTYPE html>
 <html>
+<head>
+  <!-- CSS Libraries -->
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.2.1/bootstrap-social.css" rel="stylesheet">
+
+  <!-- JS Libraries -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!-- JS Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:700' rel='stylesheet' type='text/css'>
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-  {% for assignment in site.data.assignments %}
-  <h1>{{ assignment.name }}</h1>
-  <p>{{ assignment.description }}</p>
-  <ul>
-    {% for project in assignment.projects %}
-    <li>
-      <a href="{{ assignment.path }}/{{ project.path }}">{{ project.name }}</a>
-      {% if project.description %}
-      &mdash; {{ project.description }}
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-  {% endfor %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="brand-title"> <span class="brand"> mission<span class="bold-brand">bit</span></span> </h1>
+        <h2 class="page-title"> A selection of student projects from "Intro Web Programming"</h2>
+       </div>
+
+      <div class="col-md-12">
+        {% for assignment in site.data.assignments %}
+        <div class="section">
+          <div class="headline col-md-12">
+            <h2 class="title-name">{{ assignment.name }}</h2>
+            <p>{{ assignment.description }}</p>
+            <ul>
+              {% for project in assignment.projects %}
+              <li>
+                <a href="{{ assignment.path }}/{{ project.path }}">{{ project.name }}</a>
+                {% if project.description %}
+                &mdash; {{ project.description }}
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </body>
 </html>
