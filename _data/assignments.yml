@@ -51,3 +51,19 @@
       name: "Endless Jump"
       description:
         "A crazy endless runner. Can you get over 9000?"
+- name: Fall 2014 Group Projects
+  path: 2014/fall/group-projects
+  description:
+    "For their end of semester projects, most of the groups decided to
+    build games of their own design with the Phaser HTML5 game framework!"
+  projects:
+    - path: hexbit
+      name: hexbit
+      description:
+        "Two player turn-based strategy game. Take over the map to win!"
+    - path: jlaw
+      name: jlaw
+      description:
+        "Jennifer Lawrence broke the law and is escaping from enemies who altered
+        their appearence to look just like her. She must use her enemies to her
+        advantage and go into a giant picture of her beautiful face."

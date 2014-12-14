@@ -1,0 +1,28 @@
+body{
+    text-shadow: black 0.1em 0.1em 0.1em;
+    background-image: url(future.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-size: 60px;
+    align-content: center;
+    font-family: 'Indie Flower',cursive;
+}
+.title {
+    text-align: center;
+}
+
+.game-area canvas {
+    /*border: 1px dashed #ccc;*/
+    margin: 0 auto;
+}
+button {
+    font-size: 32px;
+}
+footer{
+    color: #E0FFFF;
+    font-style: italic;
+    font-size: 60%;
+}
