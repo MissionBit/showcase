@@ -19,9 +19,9 @@ var GameScreen = {
         game.load.spritesheet('mo', 'assets/images/marioWalk.png', 40, 34, 8);
         game.load.image('floor', 'assets/images/floor.jpg');
         game.load.image('bullet', 'assets/images/bullet.png');
-        game.load.image('pl', '/assets/images/platforms.png', 100, 100, 45);
-        game.load.image('bg', '/assets/images/background.png', 1000, 100);
-        game.load.image('mbl', '/assets/images/mario_bullet.png');
+        game.load.image('pl', 'assets/images/platforms.png', 100, 100, 45);
+        game.load.image('bg', 'assets/images/background.png', 1000, 100);
+        game.load.image('mbl', 'assets/images/mario_bullet.png');
     },
     create: function() {
        

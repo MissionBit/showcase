@@ -1,8 +1,8 @@
 var GameOverScreen =  {
     preload : function () {
-//        game.load.image = ('/assets/images/background khanda.png');
-        game.load.image('bg' , '/assets/images/game_background.png' );
-        game.load.image('go' , '/assets/images/oops.jpeg')
+//        game.load.image = ('assets/images/background khanda.png');
+        game.load.image('bg' , 'assets/images/game_background.png' );
+        game.load.image('go' , 'assets/images/oops.jpeg')
     },
     create: function () {
         this.bg = game.add.image(0,0, 'bg');

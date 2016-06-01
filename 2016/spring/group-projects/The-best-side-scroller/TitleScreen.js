@@ -5,10 +5,10 @@ var TitleScreen = {
     //it is where we load our assets
     preload : function() {
         //loads an image named 'logo'
-        game.load.image('chr', '/assets/images/walk_animation.gif');
+        game.load.image('chr', 'assets/images/walk_animation.gif');
         //loads an image named 'start'   
-        game.load.image('start1', '/assets/images/start1.png');
-        game.load.image('bg' , '/assets/images/game_background.png' );
+        game.load.image('start1', 'assets/images/start1.png');
+        game.load.image('bg' , 'assets/images/game_background.png' );
     },
     
     
