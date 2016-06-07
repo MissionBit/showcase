@@ -14,7 +14,7 @@ boil.hallway.prototype = {
         game.load.image('upperwall','Assets/Backgrounds/upperwall.png',3000,1500);
         game.load.image('middlewall','Assets/Backgrounds/middlewall4.png',3000,1500);
         game.load.image('lowerwallr','Assets/Backgrounds/lowerwallr.png',3000,1500);
-        game.load.audio('pop', 'assets/Sounds/In_Albany_New_York.ogg');
+        game.load.audio('pop', 'Assets/Sounds/In_Albany_New_York.ogg');
          
     },
     create: function(){

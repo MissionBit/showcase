@@ -10,7 +10,7 @@ boil.bathroom.prototype = {
         game.load.tilemap('bathroomTilemap', 'Assets/Backgrounds/bathroomTilemap.json', null,Phaser.Tilemap.TILED_JSON);
         game.load.image('bathroomTileset', 'Assets/Backgrounds/bathroomTileset.png');
         game.load.spritesheet('ptag', 'Assets/Spritesheets/ptag.png',450,940);
-        game.load.audio('myth', 'assets/Sounds/myth.ogg');
+        game.load.audio('myth', 'Assets/Sounds/myth.ogg');
 //        game.load.spritesheet('textbox', 'Assets/Spritesheets/textbox.png', 1500,470);
 
          
