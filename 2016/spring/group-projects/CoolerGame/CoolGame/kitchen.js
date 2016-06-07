@@ -11,7 +11,7 @@ boil.kitchen.prototype = {
         game.load.image('kitchenTileset', 'Assets/Backgrounds/kitchenTileset.png');
         game.load.spritesheet('ptag', 'Assets/Spritesheets/ptag.png',450,940);
         game.load.image('counters','Assets/Backgrounds/counters.png',1500,1500);
-        game.load.audio('kitch', 'assets/Sounds/kitch.ogg');
+        game.load.audio('kitch', 'Assets/Sounds/kitch.ogg');
         
          
     },

@@ -13,7 +13,7 @@ boil.oKitchen.prototype = {
         game.load.image('counters','Assets/Backgrounds/counters.png',1500,1500);
         game.load.spritesheet('talkfridge','Assets/Spritesheets/talkfridge.png',450,450);
         game.load.spritesheet('talkjegg','Assets/Spritesheets/talkjegg.png',450,450);
-        game.load.audio('kitch', 'assets/Sounds/kitch.ogg');
+        game.load.audio('kitch', 'Assets/Sounds/kitch.ogg');
     },
   create: function(){
         var enter = this.input.keyboard.addKey(Phaser.Keyboard.ENTER);
