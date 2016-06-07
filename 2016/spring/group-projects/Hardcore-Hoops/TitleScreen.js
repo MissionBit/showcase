@@ -5,10 +5,10 @@ var TitleScreen = {
     //it is where we load our assets
     preload : function() {
         //loads an image named 'logo'
-        game.load.image('logo', '/assets/images/Vicous Basketball.png');
+        game.load.image('logo', 'assets/images/Vicous Basketball.png');
         //loads an image named 'start'
-        game.load.image('startgame', '/assets/images/Time Mode.png');
-        game.load.image('survivor mode', '/assets/images/survivor.png');
+        game.load.image('startgame', 'assets/images/Time Mode.png');
+        game.load.image('survivor mode', 'assets/images/survivor.png');
     },
     
     //the create method is run after the preload method
