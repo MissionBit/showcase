@@ -17,11 +17,11 @@ var GameScreen = {
     preload : function() {
         //loads an image named 'logo'
         game.load.image('logo', 'assets/images/basketball.png');
-        game.load.image('hoop', '/assets/images/basketball-net.jpg');
-        game.load.image('bg', '/assets/images/basketball-court-backgrounds1.jpg');
+        game.load.image('hoop', 'assets/images/basketball-net.jpg');
+        game.load.image('bg', 'assets/images/basketball-court-backgrounds1.jpg');
         //loads an image named 'start'
-        game.load.image('start', '/assets/images/start.png');
-        game.load.image('lebron', '/assets/images/lebron.png');
+        game.load.image('start', 'assets/images/start.png');
+        game.load.image('lebron', 'assets/images/lebron.png');
     },
     
     //the create method is run after the preload method
