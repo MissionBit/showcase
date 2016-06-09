@@ -8,7 +8,7 @@ var TitleScreen = {
         game.load.image('logo', 'assets/images/mission_bit_logo.png');
         //loads an image named 'start'
         game.load.image('images', 'assets/images/start-button.png');
-        game.load.image('rules', 'assets/images/rules-button.png');
+        game.load.image('rules', 'assets/images/Rules-button.png');
 
     },
     
