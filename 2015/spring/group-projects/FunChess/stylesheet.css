@@ -1,0 +1,15 @@
+.black {
+    width:100px;
+    height:100px;
+    background-color:#000000;
+    text-align:center;
+}
+.white {
+    width:100px;
+    height:100px;
+    background-color:#ffffff;
+    text-align:center;
+}
+selector {
+    color: grey;
+    background-color: #ffOOO; }

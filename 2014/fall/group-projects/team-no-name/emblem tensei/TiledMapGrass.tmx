@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="27" height="24" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="TiledMapGrass3" tilewidth="32" tileheight="32">
+  <image source="fed20tilesets64/basicoutdoor32.PNG" width="512" height="288"/>
+ </tileset>
+ <layer name="BackgroundLayer" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjZmBgYB7COI5G5soCsRwNzNUCYjE0sxmhmBT7CPnbF8lcENaB+glZTIUK/jFGMxMXpoZdICxPhF2kxhu+sBQFYh48dkmSGT+47CLkNz8qhCF6OsCFJSi0Q4xIe2AYpJ7UdGJApNmcWMTIyd+k+IeYdIIPy5BohzgUK5AZZ7C8xUWEXbpk2kFqXjbCoZdQ/sImjx6e3Gh8auQtENYiMr4otYfYtA/C2lSwD1f5JMVAXtrDFYeKWOwIAGJlKsUPtnToD3U/yC+40txwxfjyEgAUoBA/
+  </data>
+ </layer>
+ <objectgroup name="ObstacleLayer"/>
+</map>

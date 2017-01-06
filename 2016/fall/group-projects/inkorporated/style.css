@@ -1,0 +1,45 @@
+ body {
+     font-family: 'Kaushan Script', cursive;
+     background-color:#e0e2ef;
+     margin: 0;
+     padding: 0;
+}
+          
+#container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    width:55%;
+}
+a {
+    color: black;
+    text-decoration: none;
+    
+}
+a:hover {color: #555376}
+
+canvas {
+        z-index: -10000000;
+}
+#logo {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+        
+}
+.ResizedTextbox {
+    width: 300px;
+    height: 30px;
+    font-size: 100%;
+}
+.ResizedLabel {
+    padding-left: 50px;
+    font-size: 200%;
+}
+#pen {
+  
+    height: 150px;
+    transform: translate(0px,100px) rotate(302deg) ;
+}

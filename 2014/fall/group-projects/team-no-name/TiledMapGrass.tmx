@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="36" tileheight="36" backgroundcolor="#178019">
+ <tileset firstgid="1" name="2uzw3lw" tilewidth="36" tileheight="36">
+  <image source="../../Downloads/2uzw3lw.png" width="382" height="369"/>
+ </tileset>
+ <layer name="BackgroundLayer" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyV0tdOAgEQheHF7tppKiqoCNjADtjFSi9iAcGK7/8M/psMcbIxQS6+ZG92z9mZcRiG0YNe9KEfA8hhCMPy/IIK7lHFA0YwijGMYwKTmIITLnn3Gw008Yo3eODFNGYwCx/mMI8F+CXfhEN6+iX7EUtYRhArCCGMCFYl3616mpL9jg1sIooYtrCNHeyqfN1zD/s4QBwJJHGIIxzjROUHsCgzOMUZznGBFC5xhWvc4Fblr2Fdet4hjQyy8r08CiiihLLK1z3tO7Pm9oRn1FCX3bbzdU/7zqy5feATX2jJbtv5umenWRWla13+SffsNKuadG3Jd3TP/87KuvFB4/fGzS5mZb9xdxez+uvGfwB5bjKY
+  </data>
+ </layer>
+ <objectgroup name="ObjectLayer"/>
+</map>

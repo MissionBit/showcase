@@ -67,3 +67,71 @@
         "Jennifer Lawrence broke the law and is escaping from enemies who altered
         their appearence to look just like her. She must use her enemies to her
         advantage and go into a giant picture of her beautiful face."
+    - path: team-no-name/emblem tensei/emblem.html
+      name: emblem tensei
+      description:
+        "Fire Emblem based RPG"
+
+- name: Fall 2015 Group Projects
+  path: 2015/fall/group-projects
+  description:
+    "For their end of semester projects, most of the groups decided to
+    build games of their own design with the Phaser HTML5 game framework!"
+  projects:
+    - path: adventures-of-fluffles/AdventuresFluffles.html
+      name: adventures-of-fluffles
+      description:
+        "Fluffles the cat flying around."
+
+- name: Spring 2015 Group Projects
+  path: 2015/spring/group-projects
+  description:
+    "For their end of semester projects, most of the groups decided to
+    build games of their own design with the Phaser HTML5 game framework!"
+  projects:
+    - path: FunChess
+      name: FunChess
+      description:
+        "Fun chess."
+    - path: halo-the-doughboy-chronicles/halo.html
+      name: "Halo: The Doughboy Chronicles"
+      description:
+        "Master Chief fights the Pillsbury Doughboy."
+
+- name: Spring 2016 Group Projects
+  path: 2016/spring/group-projects
+  description:
+    "For their end of semester projects, most of the groups decided to
+    build games of their own design with the Phaser HTML5 game framework!"
+  projects:
+    - path: gamefolder
+      name: "Color Karma"
+      description:
+        "Play with some puzzling colored squares"
+    - path: Hardcore-Hoops
+      name: "Hardcore Hoops"
+      description:
+        "Shoot some hoops if you dare"
+    - path: The-best-side-scroller
+      name: "The best side scroller"
+      description:
+        "Its really hard, I promise"
+
+- name: Fall 2016 Group Projects
+  path: 2016/fall/group-projects
+  description:
+    "For their end of semester projects, most of the groups decided to
+    build games of their own design with the Phaser HTML5 game framework!"
+  projects:
+    - path: inkorporated
+      name: Inkorporated
+      description:
+        "Inkorporated, Inc. sells pens."
+    - path: tilegame
+      name: "tilegame"
+      description:
+        "RPG clone"
+    - path: the-best-sidescroller2
+      name: "Mario's Revenge"
+      description:
+        "Mario is back and he's mad"
