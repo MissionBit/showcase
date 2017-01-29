@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <link href="Game.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+
+  <div class="zombie"></div>
+  <div class="human"></div>
+
+<script>
+  var player_size = 30;
+  var w = window,
+d = document,
+e = d.documentElement,
+g = d.getElementsByTagName('body')[0],
+max_x = w.innerWidth || e.clientWidth || g.clientWidth,
+max_y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+//prompt("Would you like to play Reclaim?");
+document.body.style.background = '#cccccc';
+zombie  = document.querySelector('.zombie')
+zombie.style.top = '150px'
+zombie.style.left = '15px'
+human = document.querySelector('.human')
+human.style.top = '0px'
+human.style.left = '0px'
+document.onkeydown = checkKey;
+
+function moveUp(person){
+    goUp = parseInt(person.style.top) - 5
+    if (!(goUp < 0)) {
+        person.style.top = goUp + 'px'
+    }
+}
+function moveDown(person){
+    goDown = parseInt(person.style.top) + 5
+    if(!(goDown > max_y-player_size)){
+        person.style.top = goDown + 'px'
+    }
+}
+function moveLeft(person){
+    goLeft = parseInt(person.style.left) - 5
+    if(!(goLeft < 0)){
+        person.style.left = goLeft + 'px'
+    }
+}
+function moveRight(person){
+    goRight = parseInt(person.style.left) + 5
+    if(!(goRight > max_x-player_size)){
+        person.style.left = goRight + 'px'
+    }
+}
+function checkKey(e){
+        e = e || window.event;
+        console.log(e);
+        if(e.keyCode === 87 || e.keyCode === 38){ //87 w //38 up arrow
+            moveUp(human)
+        }
+        if(e.keyCode === 83 || e.keyCode === 40){ //83 s //40 down arrow
+            moveDown(human)
+        }
+        if(e.keyCode === 65 || e.keyCode === 37){ //65 a //37 left arrow
+           moveLeft(human)
+        }
+        if(e.keyCode === 68 || e.keyCode === 39){ //68 d //39 right arrow
+           moveRight(human)
+        }
+        if(e.keyCode === 27){ //esc
+            zombie.style.top = '15px';
+            zombie.style.left = '15px';
+            human.style.top = '300px';
+            human.style.left = '300px';  
+            clearInterval(interval);
+            interval = setInterval(everyFrame, 1000/30);
+        }
+    };
+
+everyFrame = function(){
+    speed = 1
+    xHuman = parseFloat(human.style.left)
+    xZombie = parseFloat(zombie.style.left)
+    yHuman = parseFloat(human.style.top)
+    yZombie = parseFloat(zombie.style.top)
+    xDifference = xHuman - xZombie
+    yDifference = yHuman - yZombie
+    distance = Math.sqrt(Math.pow(xDifference, 2) + Math.pow(yDifference,2))
+    xTravel = xDifference/distance/speed
+    yTravel = yDifference/distance/speed
+    yAddOn = yZombie + yTravel
+    zombie.style.top = yAddOn + 'px'
+    xAddOn = xZombie + xTravel
+    zombie.style.left = xAddOn + 'px'
+    if (distance<player_size){
+        alert('dead');
+        clearInterval(interval);
+    }
+};
+
+interval = setInterval(everyFrame, 1000/30);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<html>
+    <head>
+    <link href="to what ever your using the css" media="screen" rel="stylesheet" type="text/css"/>
+  </head>
+    <body>
+    <div class="building"></div>
+    <div class="building2"></div>
+    <div class="building3"></div>
+    <div class="building4"></div>
+    <div class="building5"></div>   
+    <div class="dividers"></div>
+    <div class="dividers2"></div>
+    <div class="dividers3"></div>
+    <div class="dividers4"></div>    
+    <div class="road"></div>
+    <div class="road2"></div>
+    <div class="road3"></div>
+    <div class="road4"></div>    
+    <div class="park"></div>
+    <div class="park2"></div>    
+    <div class="human"></div>
+    <div class="zombie"></div>
+    </body>
+</html>
+
+This is the whole CSS code below:
+
+.building {
+width:80px;
+height:70px;
+background:#E00025;
+position:absolute;top:-1px;left:-1px 
+}
+
+.road {
+width:70px;
+height:667px;
+background:#000000;
+position:absolute; top:-1px; left:80px;z-index:1;
+}
+
+.dividers {
+width:0px;
+height:656px;
+border-right: 10px dashed yellow; 
+position:absolute; top:px; left:110px; z-index:2;
+}
+
+.dividers2 {
+width:1360px;
+height:0px;
+border-bottom: 10px dashed yellow; 
+position:absolute; top:170px; left:-1px; z-index:2;
+}
+
+.dividers3 {
+width:1360px;
+height:0px;
+border-bottom: 10px dashed yellow; 
+position:absolute; top:392px; left:-1px; z-index:2;
+}
+
+.building2 {
+width:80px;
+height:70px;
+background:#E00025;
+position:absolute; top:70px; left:151px;
+}
+
+.road2 {
+width:1367px;
+height:70px;
+background:#000000;
+position:absolute; top:141px; left:-1px;
+}
+
+.park {
+width:500px;
+height:150px;
+background:#1B9F0A;
+position:absolute;top:212px;left:-1px;
+}
+
+.park2 {
+width:80px;
+height:70px;
+background:#1B9F0A;
+position:absolute;top:-1px;left:151px;
+}
+
+.human {
+width:30px;
+height:30px;
+border-radius:40px;
+font-size:20px;
+color:#33ccff;
+line-height:100px;
+text-align:center;
+background:#000066;
+position:absolute; top:50px; right:100px; z-index: 2;
+}
+
+.zombie {
+width:30px;
+height:30px;
+border-radius:30px;
+font-size:20px;
+line-height:100px;
+text-align:center;
+background:#085C05;
+position:absolute; top:30px; right:15px; z-index: 2;
+visibility: visible;
+}
+
+.road3 {
+width:1367px;
+height:70px;
+background:#000000;
+position:absolute; top:363px; left:-1px;
+}
+
+.building3 {
+width:100px;
+height:150px;
+background:#E00025;
+position:absolute; top:212px; left:500px;
+}
+
+.road4 {
+width:70px;
+height:667px;
+background:#000000;
+position:absolute; top:-1px; left:300px;z-index:1;
+}
+
+.dividers4 {
+width:0px;
+height:656px;
+border-right: 10px dashed yellow; 
+position:absolute; top:px; left:330px; z-index:2;
+}
+
+.building4 {
+width:80px;
+height:70px;
+background:#4438C8;
+position:absolute;top:70px;left:-1px 
+}
+
+.building5 {
+width:67px;
+height:141px;
+background:#4438C8;
+position:absolute;top:-1px;left:232px 
+}

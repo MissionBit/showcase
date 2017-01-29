@@ -1,0 +1,321 @@
+<html>
+  <head>
+    <link href="Game5.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+
+<body>
+
+    <div class="human"></div>
+    <div class="road"></div>
+    <div class="dividers"></div>
+    <div class="dividers2"></div>
+    <div class="building2"></div>
+    <div class="road2"></div>
+    <div class="park"></div>
+    <div id="score">
+        <p class = "current-score">{score}</p>
+    </div>
+
+<script> 
+    
+
+var score = 0;
+    document.getElementById("score").value=score;
+    document.getElementById("score").innerHTML=score;
+    var playerSize = 15;
+    var w = window,
+      d = document,
+      e = d.documentElement,
+      g = d.getElementsByTagName('body')[0],
+      max_x = w.innerWidth || e.clientWidth || g.clientWidth,
+      max_y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+
+   
+ document.body.style.background = '#cccccc';
+   
+    human = document.querySelector('.human');
+    human.style.top = '300px';
+    human.style.left = '300px';
+    
+    document.onkeydown = checkKey;
+    document.addEventListener('mousemove',onmousemove,false);
+    document.addEventListener('mousedown',onmousedown,false);
+    document.addEventListener('mouseup',onmouseup,false);
+    
+
+function createZombie(){
+        var allZombies = document.querySelectorAll(".zombie");
+        if(allZombies.length<5){
+            var zombie = document.createElement('div');
+            zombie.classList.add('zombie');
+            document.body.appendChild(zombie);
+            var xRandomplace = Math.random()*max_x;
+            var yRandomplace = Math.random()*max_y;
+            zombie.style.top = xRandomplace + 'px';
+            zombie.style.left = yRandomplace + 'px';
+            var zombieInterval = setInterval(function(){
+                moveToHuman(zombie);
+                checkForCollisionsZombies(zombie);
+                if(!zombie.parentElement){
+                    clearInterval(zombieInterval);
+                }
+            },1000/30);  //calculating every 30th of a second //1000 miliseconds = 1 second
+        }   
+            }
+    
+    setInterval(createZombie,1000);     //10,000 milisex = 10 sec
+    
+
+
+
+ function createZombie2(){
+        var allZombies2 = document.querySelectorAll(".zombie2");
+        if(allZombies2.length<20){
+            var zombie2 = document.createElement('div');
+            zombie2.classList.add('zombie2');
+            document.body.appendChild(zombie2);
+            var xRandomplace2 = Math.random()*max_x;
+            var yRandomplace2 = Math.random()*max_y;
+            zombie2.style.top = xRandomplace2 + 'px';
+            zombie2.style.left = yRandomplace2 + 'px';
+            var zombie2Interval = setInterval(function(){
+                moveToHuman(zombie2);
+                checkForCollisionsZombies(zombie2);
+                if(!zombie2.parentElement){
+                    clearInterval(zombie2Interval);
+                }
+            },1000/30);  //calculating every 30th of a second //1000 miliseconds = 1 second
+        }   
+            }
+    
+    setInterval(createZombie2,1000);     //10,000 milisex = 10 sec
+
+
+
+    function onmousemove(){
+        //console.log("moved");
+    }
+    function onmousedown(event){
+        //console.log(event);
+        bulletStartTop = parseFloat(human.style.top);
+        bulletStartLeft = parseFloat(human.style.left);
+        var bullet = document.createElement('div');     //creates a div on document, a place to put the bullet in/on
+        bullet.classList.add('bullet');     //adds a bullet div
+        document.body.appendChild(bullet);      //puts the bullet on the document otherwise leaves the bullet hanging around
+        bullet.style.top = bulletStartTop + 'px';
+        bullet.style.left = bulletStartLeft + 'px';
+        
+        var speed = 1;
+        var xBullet = parseFloat(bullet.style.left);
+        var xMouse = event.clientX;
+        var yBullet = parseFloat(bullet.style.top);
+        var yMouse = event.clientY;
+        var xDifference = xMouse - xBullet;
+        var yDifference = yMouse - yBullet;
+        var distance = Math.sqrt(Math.pow(xDifference, 2) + Math.pow(yDifference, 2));
+        var xTravel = xDifference/distance/speed;
+        var yTravel = yDifference/distance/speed;
+        var existence = 0;
+        var bulletInterval = setInterval(function(){
+            var xBullet = parseFloat(bullet.style.left);
+            var yBullet = parseFloat(bullet.style.top);
+            var yAddOn = yBullet + yTravel;
+            var xAddOn = xBullet + xTravel;
+            bullet.style.top = yAddOn + 'px';
+            bullet.style.left = xAddOn + 'px';
+            existence++;
+            if(existence>10000){
+                bullet.parentElement.removeChild(bullet);
+
+            }
+
+                if(!bullet.parentElement){
+                    clearInterval(bulletInterval);
+                }
+//            }
+        },1000/300);
+        
+    }
+    function onmouseup(){
+        //console.log("up");  
+    }
+    
+    function moveUp(person){
+      goUp = parseInt(person.style.top) - 5;
+      if (!(goUp < 18)) {
+        person.style.top = goUp + 'px';
+      }
+    }
+    function moveDown(person){
+      goDown = parseInt(person.style.top) + 5;
+      if(!(goDown > max_y - playerSize)){
+      person.style.top = goDown + 'px';
+      }
+    }
+    function moveLeft(person){
+      goLeft = parseInt(person.style.left) - 5;
+      if(!(goLeft < 18)){
+      person.style.left = goLeft + 'px';
+      }
+    }
+    function moveRight(person){
+      goRight = parseInt(person.style.left) + 5;
+      if(!(goRight > max_x - playerSize)){
+      person.style.left = goRight + 'px';
+      }
+    }
+    function checkKey(e){
+        console.log("hi");
+        e = e || window.event;
+        console.log(e);
+        if(e.keyCode === 87 || e.keyCode === 38){ //87 w //38 up arrow
+            moveUp(human);
+        }
+        if(e.keyCode === 83 || e.keyCode === 40){ //83 s //40 down arrow
+            moveDown(human);
+        }
+        if(e.keyCode === 65 || e.keyCode === 37){ //65 a //37 left arrow
+           moveLeft(human);
+        }
+        if(e.keyCode === 68 || e.keyCode === 39){ //68 d //39 right arrow
+           moveRight(human);
+        }
+        if(e.keyCode === 27){ //esc
+            zombie.style.top = '15px';
+            zombie.style.left = '15px';
+            human.style.top = '300px';
+            human.style.left = '300px';  
+            clearInterval(interval);
+            
+            interval = setInterval(everyFrame, 1000/30);
+            zombie.style.visibility = 'visible';
+        }
+    }
+    
+     removeAll = function(){
+      var allZombies = document.querySelectorAll(".zombie");
+        for(var i = 0; i < allZombies.length - 1; i++){
+            var zombie = allZombies[i];
+            zombie.parentElement.removeChild(zombie);
+        }
+        var allBullets = document.querySelectorAll(".bullet");
+        for(var i = 0; i < allBullets.length - 1; i++){
+            var bullet = allBullets[i];
+            bullet.parentElement.removeChild(bullet);
+        }
+     
+    };
+    
+    moveToHuman = function(zombie){
+        var speed = 1;
+        var xHuman = parseFloat(human.style.left);
+        var xZombie = parseFloat(zombie.style.left);
+        var yHuman = parseFloat(human.style.top);
+        var yZombie = parseFloat(zombie.style.top);
+        var xDifference = xHuman - xZombie;
+        var yDifference = yHuman - yZombie;
+        var distance = Math.sqrt(Math.pow(xDifference, 2) + Math.pow(yDifference, 2));
+        var xTravel = xDifference/distance/speed;
+        var yTravel = yDifference/distance/speed;
+        var yAddOn = yZombie + yTravel;
+        var xAddOn = xZombie + xTravel; 
+        if(distance<100){
+            
+            zombie.style.top = yAddOn + 'px';
+            zombie.style.left = xAddOn + 'px';  
+        }
+    };
+
+
+
+ removeAll2 = function(){
+      var allZombies2 = document.querySelectorAll(".zombie2");
+        for(var i = 0; i < allZombies2.length - 1; i++){
+            var zombie2 = allZombies2[i];
+            zombie2.parentElement.removeChild(zombie2);
+        }
+    
+    };
+    
+    moveToHuman2 = function(zombie2){
+        var speed2 = 1;
+        var xHuman = parseFloat(human.style.left);
+        var xZombie2 = parseFloat(zombie2.style.left);
+        var yHuman = parseFloat(human.style.top);
+        var yZombie2 = parseFloat(zombie2.style.top);
+        var xDifference2 = xHuman - xZombie2;
+        var yDifference2 = yHuman - yZombie2;
+        var distance2 = Math.sqrt(Math.pow(xDifference2, 2) + Math.pow(yDifference2, 2));
+        var xTravel2 = xDifference2/distance2/speed2;
+        var yTravel2 = yDifference2/distance2/speed2;
+        var yAddOn2 = yZombie2 + yTravel2;
+        var xAddOn2 = xZombie2 + xTravel2; 
+        if(distance2<50){
+            
+            zombie2.style.top = yAddOn + 'px';
+            zombie2.style.left = xAddOn + 'px';  
+        }
+
+
+
+
+
+
+
+
+
+
+
+        if (distance < playerSize + 15){
+            var restart = prompt('You died. Replay? YES or NO').toUpperCase();
+            
+            if( restart === 'YES'){
+                human.style.top = '300px';
+                human.style.left = '300px';
+                zombie.parentElement.removeChild(zombie);
+
+                score = 0;
+                document.getElementById("score").value=score;
+                document.getElementById("score").innerHTML=score;
+                removeAll();
+        
+            }
+            
+        }
+    };
+    scoreUpdate = function(number){
+        score = score + number;
+        document.getElementById("score").value=score;
+        document.getElementById("score").innerHTML=score;
+    };
+    
+    checkForCollisionsZombies = function(zombie){
+        allBullets = document.querySelectorAll(".bullet");
+        for(var i = 0; i < allBullets.length - 1;i++){
+            var bullet = allBullets[i];     //lets all the code below work, check through ALL bullets
+            var xBullet = parseFloat(bullet.style.left);
+            var xZombie = parseFloat(zombie.style.left);
+            var yBullet = parseFloat(bullet.style.top);
+            var yZombie = parseFloat(zombie.style.top);
+            var xDifference = xZombie - xBullet;
+            var yDifference = yZombie - yBullet;
+            var distance = Math.sqrt(Math.pow(xDifference, 2) + Math.pow(yDifference, 2));
+            if(distance < playerSize){   
+                bullet.parentElement.removeChild(bullet);
+                zombie.parentElement.removeChild(zombie);
+                scoreUpdate(10);
+                console.log(score);
+                return;
+            }
+        }
+    };
+    
+
+
+
+
+</script>
+    
+</body>
+</html>

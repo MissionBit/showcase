@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>The Start Of Something Big...</title>
+      <script type="text/javascript" src="processing-1.4.1.min.js"></script>
+      <script type="text/javascript">
+      function drawSomeText(id) {
+        var pjs = Processing.getInstanceById(id);
+        var text = document.getElementById('inputtext').value;
+        pjs.drawText(text); }
+      </script>
+    </head>
+    <body>
+      <script type="application/processing" target="simple_start">
+          void setup() {
+    size(200,200);
+          noLoop();// turn off animation, since we won't need it
+    stroke(#FFEE88);
+    fill(#FFEE88);
+    background(#000033);
+          text("",0,0);// force Processing to load a font
+          textSize(24);// set the font size to something big
+  }
+
+  void draw() { }
+
+  void drawText(String t)
+  {
+    background(#000033);
+    // get the width for the text
+    float twidth = textWidth(t);
+    // place the text centered on the drawing area
+    text(t, (width - twidth)/2, height/2);
+  }
+      </script>
+      <canvas id="simple_start"></canvas>
+      <input type="textfield" value="my text" id="inputtext">
+      <button type="button" onclick="drawSomeText('simple_start')">place</button>
+    </body>
+  </html>

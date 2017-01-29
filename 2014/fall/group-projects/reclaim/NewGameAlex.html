@@ -1,0 +1,125 @@
+<html>
+<style>
+
+.zombie {
+width:50px;
+height:50px;
+border-radius:40px;
+font-size:20px;
+line-height:100px;
+text-align:center;
+background:#33cc66;
+position:absolute; top:30px; right:15px;
+}
+
+.human {
+width:50px;
+height:50px;
+border-radius:40px;
+font-size:20px;
+color:#33ccff;
+line-height:100px;
+text-align:center;
+background:#000066;
+position:absolute; top:50px; right:100px;
+}
+
+</style> 
+<body>
+
+
+<div class="zombie"></div>
+<div class="human"></div>
+<!--
+<button onclick = "moveUp()">Up</button>
+<button onclick = "moveDown()">Down</button>
+<button onclick = "moveLeft()">Left</button>
+<button onclick = "moveRight()">Right</button>
+-->
+
+<script> 
+//prompt("Would you like to play Reclaim?");
+    zombie  = document.querySelector('.zombie')
+    zombie.style.top = '0px'
+    zombie.style.left = '500px'
+    human = document.querySelector('.human')
+    human.style.top = '0px'
+    human.style.left = '0px'
+    
+    document.onkeydown = checkKey;
+    
+    function moveUp(person){
+    goUp = parseInt(person.style.top) - 5
+    person.style.top = goUp + 'px'
+    }
+    function moveDown(person){
+    goDown = parseInt(person.style.top) + 5
+    person.style.top = goDown + 'px'
+    //zombie.style.top = "100px"
+    console.log("ok");
+    }
+    function moveLeft(person){
+    goLeft = parseInt(person.style.left) - 5
+    person.style.left = goLeft + 'px'
+    }
+    function moveRight(person){
+    goRight = parseInt(person.style.left) + 5
+    person.style.left = goRight + 'px'
+    }
+    function checkKey(e){
+        console.log("hi");
+        e = e || window.event;
+        console.log(e);
+        if(e.keyCode === 38){
+            moveUp(human)
+        }
+        if(e.keyCode === 40){
+            moveDown(human)
+        }
+        if(e.keyCode === 37){
+           moveLeft(human)
+        }
+        if(e.keyCode === 39){
+           moveRight(human)
+        }
+    };
+    
+    
+    everyFrame = function(){
+        speed = 1
+        xHuman = parseFloat(human.style.left)
+        xZombie = parseFloat(zombie.style.left)
+        yHuman = parseFloat(human.style.top)
+        yZombie = parseFloat(zombie.style.top)
+        xDifference = xHuman - xZombie
+        yDifference = yHuman - yZombie
+        distance = Math.sqrt(Math.pow(xDifference, 2) + Math.pow(yDifference,2))
+        xTravel = xDifference/distance/speed
+        yTravel = yDifference/distance/speed
+        yAddOn = yZombie + yTravel
+        zombie.style.top = yAddOn + 'px'
+        xAddOn = xZombie + xTravel 
+        zombie.style.left = xAddOn + 'px'
+        if (distance<50){
+            alert('dead');
+//            human.style.top = '0px';
+//            human.style.left = '0px';
+//            zombie.style.top = '0px';
+//            zombie.style.left = '500px';
+            clearInterval(refreshIntervalId);
+        }
+        console.log(distance);
+        
+        
+    };
+    var refreshIntervalId = setInterval(everyFrame, 1000/30);
+
+    
+                             
+
+        
+    
+</script>
+    
+</body>
+</html>

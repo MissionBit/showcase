@@ -1,0 +1,81 @@
+<html>
+<html>
+    <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<style>
+
+#circle1 {
+width:50px;
+height:50px;
+border-radius:40px;
+font-size:20px;
+line-height:100px;
+text-align:center;
+background:#33cc66;
+position:fixed; top:30px; right:15px;
+}
+{
+background-color: 
+}
+
+
+.circle2 {
+width:50px;
+height:50px;
+border-radius:40px;
+font-size:20px;
+color:#33ccff;
+line-height:100px;
+text-align:center;
+background:#000066;
+position:fixed; top:50px; right:100px;
+}
+.circle2{
+        
+            position: absolute;   
+            -webkit-transition: all 1000ms ease-in-out;
+        }
+</style> 
+   
+<script>
+$(document).ready(function(){
+    $("#kill-zombies").click(function(){
+  alert("The zombie was killed.");
+});
+});
+    </script>
+        </head>
+<div id="circle1"></div>
+<div class="circle2"></div>
+
+    <button id="kill-zombies">Kill Zombies!</button>
+    
+<script> 
+prompt("Would you like to play Reclaim?");
+    document.addEventListener("keydown", function(event){
+            
+            event.preventDefault(); 
+        var circle2=document.querySelector(".circle2")
+
+        console.log(event)
+        if(event.which===38)//up
+        {
+            circle2.style.top=(circle2.offsetTop-200)+"px"
+        }
+          else if(event.which===37)//left
+          {
+              circle2.style.left=(circle2.offsetLeft-200)+"px"
+          }
+        else if(event.which===39)//right
+        {
+            circle2.style.left=(circle2.offsetLeft+200)+"px"
+        }
+           else if(event.which===40)//down
+           {
+           circle2.style.top=(circle2.offsetTop+200)+"px"
+           }
+        });
+</script>
+    
+</body>
+</html>

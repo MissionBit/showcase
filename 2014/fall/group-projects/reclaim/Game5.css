@@ -1,0 +1,170 @@
+.zombie {
+    width:48px;
+    height:44px;
+    border-radius:80px;
+    line-height:100px;
+    text-align:center;
+    background: url(images/Zombies/animatedZombie.gif);
+    position:absolute; 
+	top:30px; 
+	right:15px;
+	z-index: 4;
+    visibility: visible;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.zombie2 {
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    line-height:100px;
+    text-align:center;
+    background: url(images/Zombies/4ZombieFrontSPAWN.png);
+    position:absolute; top:30px; right:15px;z-index: 3;
+    visibility: visible;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+
+.human {
+    width:25px;
+    height:25px;
+    border-color:#FFFFFF;
+    border-width:5px;
+    border-style:solid;
+    border-radius:40px;
+    font-size:20px;
+    color:#33ccff;
+    line-height:100px;
+    text-align:center;
+    background:#000066;
+    position:absolute; top:50px; right:100px;z-index: 3;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.bullet{
+    width:3px;
+    height:3px;
+    background:#333333;
+    position:absolute;z-index: 1;
+    margin-top: -1.5px;
+    margin-left: -1.5px;
+/*visibility: hidden; */
+}
+
+#score{
+    background:#ffffff;
+    position:absolute;top:0px;left:0px;
+    border:2px solid black;
+}
+body{
+    overflow:hidden;
+}
+
+.building {
+width:80px;
+height:70px;
+background:#E00025;
+position:absolute;top:-1px;left:-1px 
+}
+
+.road {
+width:70px;
+height:667px;
+background:#000000;
+position:absolute; top:-1px; left:80px;z-index:1;
+}
+
+.dividers {
+width:0px;
+height:656px;
+border-right: 10px dashed yellow; 
+position:absolute; top:px; left:110px; z-index:2;
+}
+
+.dividers2 {
+width:1360px;
+height:0px;
+border-bottom: 10px dashed yellow; 
+position:absolute; top:170px; left:-1px; z-index:2;
+}
+
+.dividers3 {
+width:1360px;
+height:0px;
+border-bottom: 10px dashed yellow; 
+position:absolute; top:392px; left:-1px; z-index:2;
+}
+
+.building2 {
+width:80px;
+height:70px;
+background:#E00025;
+position:absolute; top:70px; left:151px;
+}
+
+.road2 {
+width:1367px;
+height:70px;
+background:#000000;
+position:absolute; top:141px; left:-1px;
+}
+
+.park {
+width:500px;
+height:150px;
+background:#1B9F0A;
+position:absolute;top:212px;left:-1px;
+}
+
+.park2 {
+width:80px;
+height:70px;
+background:#1B9F0A;
+position:absolute;top:-1px;left:151px;
+}
+
+.road3 {
+width:1367px;
+height:70px;
+background:#000000;
+position:absolute; top:363px; left:-1px;
+}
+
+.building3 {
+width:100px;
+height:150px;
+background:#E00025;
+position:absolute; top:212px; left:500px;
+}
+
+.road4 {
+width:70px;
+height:667px;
+background:#000000;
+position:absolute; top:-1px; left:300px;z-index:1;
+}
+
+.dividers4 {
+width:0px;
+height:656px;
+border-right: 10px dashed yellow; 
+position:absolute; top:px; left:330px; z-index:2;
+}
+
+.building4 {
+width:80px;
+height:70px;
+background:#4438C8;
+position:absolute;top:70px;left:-1px 
+}
+
+.building5 {
+width:67px;
+height:141px;
+background:#4438C8;
+position:absolute;top:-1px;left:232px 
+}
