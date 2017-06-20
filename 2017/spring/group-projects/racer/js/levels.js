@@ -1,7 +1,7 @@
 var levels = [
     {
         //this is level zero
-        mapImage : '../assets/racermap.png',
+        mapImage : 'racer/assets/racermap.png',
         barriers : [
         [22,0],
         [22,30],
