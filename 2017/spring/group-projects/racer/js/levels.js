@@ -186,7 +186,7 @@ var levels = [
     }, // end level 0
         {
         //this is level 1
-        mapImage : '../assets/RacerMapLevel2.png',
+        mapImage : 'assets/RacerMapLevel2.png',
         barriers : [
         [40,0],
         [40,30],
