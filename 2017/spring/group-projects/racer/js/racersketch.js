@@ -29,9 +29,9 @@ var currLvl = 0;
 
 //gmae.load.image means to upload image
 function preload() {
-    game.load.image('car1', 'racer/assets/car1.png');
-    game.load.image('car2','racer/assets/car2.png');
-    game.load.image('barrier', 'racer/assets/barrier.png');
+    game.load.image('car1', 'assets/car1.png');
+    game.load.image('car2','assets/car2.png');
+    game.load.image('barrier', 'assets/barrier.png');
     game.load.image('map', levels[currLvl].mapImage);
     
    game.load.audio('music', 'assets/Pixel Car Racer - Theme Song 【Music】.mp3');
