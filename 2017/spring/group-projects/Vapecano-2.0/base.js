@@ -128,7 +128,7 @@ function preload() {
     game.load.audio('roblox', 'assets/roblox.mp3');
     game.load.audio('song', 'assets/tokyo.mp3');
     
-    game.load.image('start', 'assets/Start.png');
+    game.load.image('start', 'assets/start.png');
     game.load.spritesheet('bullet', 'assets/proj.png', 153, 153, 6)
     game.load.image('ins', 'assets/ins.png');
 
