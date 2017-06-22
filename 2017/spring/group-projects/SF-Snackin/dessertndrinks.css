@@ -1,0 +1,72 @@
+.navbar{
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255,255,255,1.0);
+  color: black;
+  font-family:"Lato";
+  font-size: 8;
+  text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+}
+            
+.parallax {
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a:link{
+    font-size: 300%;
+      text-decoration: none;
+}
+
+#first {
+    background-image: url(http://cbsla.files.wordpress.com/2011/03/featured-kind-kreme-2.jpg);
+}
+
+#second {
+    background-image: url(http://i1123.photobucket.com/albums/l543/hercampusphoto/UNC%20Meet%20the%20Team/2-21DessertMango.jpg);
+}
+#third{
+    background-image: url('http://violetfog.com/wp-content/uploads/2017/03/Powder-Shaved-Snow-SF-12-of-12.jpg');
+}
+
+#fourth{
+    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/45/31/db/4531db19397690437eeddf5dcb176cc2.jpg');
+}
+
+#fifth{
+    background-image:url(http://ww2.hdnux.com/photos/51/47/71/10911357/5/1024x1024.jpg);
+}
+.caption {
+  position:absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+    
+}
