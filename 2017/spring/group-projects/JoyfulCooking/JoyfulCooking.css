@@ -1,0 +1,180 @@
+body {
+	background-color: #FFFFFF;
+}
+
+.top-margin {
+	width: 97.5%;
+	border: solid #99FFCC;
+	background-color: #5FFF5F;
+	height: 7.5em;
+	margin-left: 0.9375em;
+	margin-right: 0.9375em;
+}
+
+.JCLogo {
+	position: relative;
+	top: 0.625em;
+	left: 0.625em;
+}
+
+.top-margin-title {
+	display: inline-block;
+	position: relative;
+	font-size: 1.25em;
+	bottom: 0.5em;
+	left: 1em;
+	font-family: "Indie Flower", "Comic Sans MS", "cursive", sans-serif;
+	background-color: none;
+}
+
+a:visited {
+	color: #0000FF;
+}
+
+.navbar {
+	width: 98%;
+	background-color: #99FFCC;
+	margin: 0.3125em 0.9375em;
+	height: 2em;
+}
+
+.navbar a {
+	position: relative;
+	left: 0.5em;
+	top: 0.4em;
+	text-decoration: none;
+	color: #F985BF;
+	border: 0.125em solid #F5A4CE;
+	margin-right: 0.5em;
+	padding: 0.25em 5em;
+	font-family: "Impact", "Charcoal", sans-serif;
+}
+
+.navbar a:hover {
+	color: #969696;
+}
+
+#homepage-pic {
+    position: relative;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+h2 {
+	margin: 0.5em 0em 0.25em 0.50em;
+	font-family: "Eras Light ITC", "Corbel", "Georgia", "Comic Sans MS";
+}
+
+p {
+	margin-top: 0.25em;
+	font-size: 0.8em;
+	margin-left: 1.75em;
+	font-family: "Comic Sans MS", "cursive", sans-serif;
+}
+
+.recipe-type {
+    position: relative;
+    display: block;
+    padding-bottom: 0.25em;
+    margin-left: 3.5em;
+    font-size: 1.125em;
+}
+
+.recipe-page-header {
+    font-family: sans-serif;
+    margin-left: 1em;
+    position: relative;
+    font-size: 1.75em;
+}
+
+.recipe {
+	padding-top: 1em; 
+	display: block;
+}
+
+.food-pics {
+	display: inline-block;
+	position: relative;
+	margin-left: 3em;
+}
+
+.recipe-details {
+	font-size: 1em;
+	display: inline-block;
+	position: relative;
+	bottom: 1.5em;
+}
+
+.recipe-types{
+	position: relative;
+	display: inline-block;
+	bottom: 5.25em;
+	font-size: 1.25em;
+	padding-right: 1em;
+}
+
+.recipe-descriptions {
+	font-size: 1em;
+	position: relative;
+	display: inline-block;
+	left: 11.25em;
+	bottom: 5.75em;
+}
+
+#gallery {
+	padding: 2em 1em;
+}
+
+.gallery-imgs {
+	display: inline-block;
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+
+.gallery-imgs:hover {
+	border: 0.0625em solid #000000;
+}
+
+ul a {
+	position: relative;
+	display: inline-block;
+	font-size: 1.25em;
+	background-color: #E6E6E6;
+	bottom: 5.25em; 
+	left: 0.5em;
+}
+
+ul {
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 1em;
+	background-color: #C0C0C0;
+}
+
+div {
+	margin-top: 1em;
+}
+
+#resource-page {
+	position: relative;
+	display: inline-block;
+	margin-left: 1.75em;
+}
+
+#ContactUs {
+	position: relative;
+	right: 26em;
+	display: block;
+	text-align: center;
+	background-image: url("https://images.pexels.com/photos/215/road-sky-clouds-cloudy.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+	margin: 1em 40em;
+	border: 0.25em solid #3399FF;
+	padding: 1em 0.25em;
+	font-family: fantasy;
+	font-weight: bold;
+	font-size: 1.25em;
+    #resource-page {
+	position: relative;
+	display: inline-block;
+	margin-left: 1.25em;
+}

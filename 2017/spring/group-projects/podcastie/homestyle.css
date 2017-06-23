@@ -1,0 +1,139 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-default {
+    background-color: #282D37;
+    color: #ffffff;
+    border: none;
+    
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #28CC9E;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #28CC9E;
+    background-color: #ffffff;
+}
+
+.form-control{
+    width: 20%;
+    margin-top: 10px;
+}
+
+
+.pod-playbar {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    background: #000;
+    position: fixed;
+    bottom: 0px;
+}
+
+
+.player{
+  margin: 50px 0;
+}
+
+.control-player{
+    background-color: #282D37;
+    width: 100%;
+    height: 10%; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: white;
+}
+
+.fa:hover {
+    color: #28CC9E;
+}
+
+.control-buttons {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.megamega-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 85%;
+}
+
+.mega-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+    
+}
+
+.newpod-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #21AA83;
+    width: 100%; 
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.newartwork {
+    width: 100px;
+    height: 100px;
+    background-color: #28CC9E ;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+
+.newtitle {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.newtext {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.newtext p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    color: white;
+}

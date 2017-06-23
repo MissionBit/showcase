@@ -1,0 +1,36 @@
+.newpod-container {
+    display: flex;
+    flex-direction: row;
+    background-color: mistyrose;
+    width: 100%; 
+    flex-wrap: wrap;
+    /*margin: 40px, 0px, 40px, 0px;*/
+    /*WHY DOESN'T the margin werk*/
+}
+
+.newartwork {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    flex-wrap: wrap;
+
+}
+
+.text-container p {
+    margin-right: 0px, 10px, 0px, 10px;
+}
+
+.newtext {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+

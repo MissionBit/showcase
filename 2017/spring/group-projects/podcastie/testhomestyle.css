@@ -1,0 +1,86 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.playNew {
+    color: black;
+    font-size: 40px;
+}
+
+.imgNew img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.form-control{
+    width: 20%;
+    margin-top: 10px;
+}
+
+.rowTextNew {
+    font-weight: 600;
+}
+
+.epNew {
+    color: #4b4e51;
+    font-weight: 400;
+}
+
+.userPodImg {
+    height: 100px; 
+    width: 100px;
+}
+
+.pod-container {
+    background: red;
+    height: 400px;
+    display: flex;
+}
+
+.pod-newlist {
+    background: teal;
+}
+
+.pod-userpods {
+    background: yellow;
+}
+
+.pod-newitem {
+    display: flex;
+}
+
+.pod-playbar {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    background: #000;
+    position: fixed;
+    bottom: 0px;
+}
+
+.player{
+  margin: 50px 0;
+}
+
+.control-player{
+    background-color: gray;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-buttons{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+}
