@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="phaser/phaser.min.js"></script>
+        <script src="state0.js"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Concert+One|Press+Start+2P" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+    </head>
+    <body> 
+        <h1 align=center>Devil Rush</h1>
+        
+        <canvas id="livesrect" width="250" height="25" style="border:3.5px solid #000000;" align=right> </canvas>
+            <script>
+                var Canvas = document.getElementById("livesrect");
+                var ctx = Canvas.getContext("2d");
+                ctx.fillStyle = "rgb(4, 225, 0)";
+                ctx.fillRect(0,0,250,25);
+                
+                document.write("<h2>Score:</h2>");
+                document.write("<h2>Wave:</h2>");
+                
+            </script>
+        <div class="page">
+            <div class="content">
+                <h3 align=center><u>How To Play</u></h3>
+                <p align=center> 1. Collect coins to increase score</p>
+                <p align=center>2. Don't let devils touch you!</p>
+                <p align=center>3. Have Fun!</p>
+            </div>
+        </div>
+    </body>
+</html>

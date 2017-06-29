@@ -1,0 +1,37 @@
+    body {
+            background: -webkit-linear-gradient(#FFF700, #FF5100);
+        }
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 45px;
+            color: #00FFD1;
+            text-shadow: 3px 4px 4px #FF8700;
+        }
+        p {
+            color: black;
+            font-size: 30px;
+            font-family: 'Architects Daughter', cursive;
+        }
+        h2 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 25px;
+            color: #C0EDFF;
+            text-shadow: 3px 4px 4px #FF8700;
+        }
+
+        .content {
+            background-color: white;
+            border-radius: 18px;
+            border: solid black;
+            padding-left: 60px;
+            padding-right: 60px;
+            position: fixed;
+            bottom: 490;
+            right: 55;
+        }
+        h3 {
+            color: black;
+            font-size: 40px;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 3px 3px 5px white;
+        }
