@@ -1,20 +1,65 @@
+//var canvas = document.getElementById("drawydrawdraw");
+//    canvas.width = document.body.clientWidth; //document.width is obsolete
+//    canvas.height = window.innerHeight; //document.height is obsolete
+//var context = canvas.getContext("2d");
+//// I initialize pen size to 1
+//context.lineWidth=1;
+//var drawing = false;
+//
+//var space = document.body.clientWidth / 360;    
+//for (var i = 0; i < 360; i = i + 1){
+//    context.fillStyle = "hsl(" + i + ", 100%, 50%)";
+//    context.fillRect(i * space,window.innerHeight-50,space,50);
+//}
+//
+//$(canvas).mousedown(function(e){ 
+//    drawing = true;
+//    if(e.pageY>=window.innerHeight-50){
+//		var hue = Math.floor(e.pageX / space);
+//        context.strokeStyle = "hsl(" + hue + ", 100%, 50%)";
+//		context.lineWidth=10;
+//    } else {
+//        context.beginPath();
+//        context.moveTo(e.pageX, e.pageY);
+//        
+//    }
+//});
+//$(canvas).mousemove(function(e){ 
+//    if (drawing && e.pageY<window.innerHeight-50){
+//        context.lineTo(e.pageX, e.pageY);
+//        context.stroke();
+//    } 
+//
+//});
+//$(canvas).mouseup(function(e){ 
+//    drawing = false;
+//    
+//});
+//
+//// I make a function to get the value of current range, set as pen size, this function will be call when change the range
+//function updatePenSetting() {
+//    context.lineWidth=document.getElementById('points').value;
+//}
 var canvas = document.getElementById("drawydrawdraw");
     canvas.width = document.body.clientWidth; //document.width is obsolete
     canvas.height = window.innerHeight; //document.height is obsolete
 var context = canvas.getContext("2d");
-// I initialize pen size to 1
-context.lineWidth=1;
 var drawing = false;
+//var hue;
 
-var space = document.body.clientWidth / 360;    
+function rainbowRainbow() {
+	var space = document.body.clientWidth / 360;    
 for (var i = 0; i < 360; i = i + 1){
     context.fillStyle = "hsl(" + i + ", 100%, 50%)";
     context.fillRect(i * space,window.innerHeight-50,space,50);
 }
+}
+rainbowRainbow()
 
 $(canvas).mousedown(function(e){ 
     drawing = true;
     if(e.pageY>=window.innerHeight-50){
+		var space = document.body.clientWidth / 360; 
 		var hue = Math.floor(e.pageX / space);
         context.strokeStyle = "hsl(" + hue + ", 100%, 50%)";
 		context.lineWidth=10;
@@ -28,6 +73,9 @@ $(canvas).mousemove(function(e){
     if (drawing && e.pageY<window.innerHeight-50){
         context.lineTo(e.pageX, e.pageY);
         context.stroke();
+//		console.log(hue);
+//		context.strokeStyle = "hsl(" + hue + ", 100%, 50%)";
+
     } 
 
 });
@@ -35,8 +83,11 @@ $(canvas).mouseup(function(e){
     drawing = false;
     
 });
-
-// I make a function to get the value of current range, set as pen size, this function will be call when change the range
-function updatePenSetting() {
-    context.lineWidth=document.getElementById('points').value;
+function geraldine(newValue) {
+	context.lineWidth = newValue;
 }
+function leonard() {
+	context.clearRect(0,0,canvas.width,canvas.height-50);
+	rainbowRainbow()
+}
+

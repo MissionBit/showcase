@@ -1,3 +1,4 @@
+<!--
 <!doctype html>
 <html>
 
@@ -19,21 +20,7 @@
 </head>
 
 <body>
-<!--
-      <img id=logo src="inklogof.png">
-	  <h1><center><a href=about.html>about</a>  |  <a href=shop.html>shop</a>  |  <a href=login.html>login</a>  |  <a href=timeline.html>timeline</a> </center></h1>
-		  <a href="https://twitter.com/InkorporatedPen"><img style="display:inline-block" width="38" height="38" src="tweet.png"></a>
-	  <a href="https://www.facebook.com/people/Inkorporated-Pens/100015528229085"><img width="38" height="38" src="face.png"></a>
-	  <a href="https://www.instagram.com/inkorporated.pens/"><img width="38" height="38" src="gram.png"></a>
-	  
-	   <button onclick="leonard()">Clear All</button>
-	  
-      <canvas id="drawydrawdraw" width="490" height="220"></canvas>
-      <script type="text/javascript" src="draw.js"></script>
-      <input type="range" name="points" id="points" value="50" min="0" max="100" oninput="geraldine(this.value)">
-	  	  
-    </body>
--->
+
     <img id=logo src="inklogof.png">
     <h1><center><a href=about.html>about</a>  |  <a href=shop.html>shop</a>  |  <a href=login.html>login</a>  |  <a href=timeline.html>timeline</a> </center></h1>
     <p>
@@ -41,7 +28,7 @@
     </p>
     <canvas id="drawydrawdraw" width="490" height="220"></canvas>
     <script type="text/javascript" src="draw.js"></script>
-    <!-- I change the default range value to start from 1, I will function updatePenSetting() when change the range -->
+     I change the default range value to start from 1, I will function updatePenSetting() when change the range 
     <input type="range" name="points" id="points" value="1" min="0" max="100" oninput="updatePenSetting();console.log(this.value);">
     <div class="kno-vrt-t kno-fb-ctx" data-ved="0ahUKEwiVisito8jSAhVU02MKHcTLDVIQ_TAItQEoATAe">
         <g-link class="fl">
@@ -56,4 +43,35 @@
     </div>
 </body>
 
+</html>-->
+<!doctype html>
+<html>
+  <head>
+    <title>Inkorporated</title>
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <style>
+        canvas {
+            position:absolute;
+            top:0;
+            left:0;
+        }
+      </style>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+      <img id=logo src="inklogof.png">
+	  <h1><center><a href=about.html>about</a>  |  <a href=shop.html>shop</a>  |  <a href=login.html>login</a>  |  <a href=timeline.html>timeline</a> </center></h1>
+		  <a href="https://twitter.com/InkorporatedPen"><img style="display:inline-block" width="38" height="38" src="tweet.png"></a>
+	  <a href="https://www.facebook.com/people/Inkorporated-Pens/100015528229085"><img width="38" height="38" src="face.png"></a>
+	  <a href="https://www.instagram.com/inkorporated.pens/"><img width="38" height="38" src="gram.png"></a>
+	  
+	   <button onclick="leonard()">Clear All</button>
+	  
+      <canvas id="drawydrawdraw" width="490" height="220"></canvas>
+      <script type="text/javascript" src="draw.js"></script>
+      <input type="range" name="points" id="points" value="50" min="0" max="100" oninput="geraldine(this.value)">
+	  	  
+    </body>
 </html>
+
