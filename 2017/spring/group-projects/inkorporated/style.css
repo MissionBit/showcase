@@ -1,0 +1,68 @@
+ body {
+     font-family: 'Kaushan Script', cursive;
+     background-color:#f8f8ad;
+     margin: 0;
+     padding: 0;
+}
+          
+#container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    width:55%;
+}
+a {
+    color: black;
+    text-decoration: none;
+    
+}
+a:hover {color: #555376}
+
+canvas {
+    z-index: -10000000000;
+    /*position: static;*/
+    /*padding-left: 50px;*/
+	align-content: center;
+    border: 2px;
+    border-color: red;
+}
+#logo {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+        
+}
+.ResizedTextbox {
+    width: 300px;
+    height: 30px;
+    font-size: 100%;
+}
+.ResizedLabel {
+    padding-left: 50px;
+    font-size: 200%;
+}
+#pen {
+    height: 150px;
+    transform: translate(0px,100px) rotate(302deg) ;
+}
+
+input[type='range'] {  
+    -webkit-appearance: none;  
+   height: 1px; 
+    width: 200px;
+    border: solid rgba(0,0,0,0.3) 1px;
+    border-bottom: solid rgba(0,0,0,0.5) 1px;
+    border-left: solid rgba(0,0,0,0.5) 1px;
+   -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: top left;
+   margin: 50px;
+}  
+
+.socmedbutt {
+	display: inline-block;	
+}
+.slidey {
+	display: inline-block;
+}
