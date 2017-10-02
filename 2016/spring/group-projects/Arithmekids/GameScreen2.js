@@ -4,10 +4,10 @@ var GameScreen2 = {
     //it is where we load our assets
     preload : function() {
         //load images
-        game.load.image('logo', '/assets/images/mission_bit_logo.png');
-        game.load.image('confetti', '/assets/images/confetti.gif')
-        game.load.image('restartButton', '/assets/images/restart.png');
-        game.load.image('winner', '/assets/images/Winner.jpg');
+        game.load.image('logo', 'assets/images/mission_bit_logo.png');
+        game.load.image('confetti', 'assets/images/confetti.gif')
+        game.load.image('restartButton', 'assets/images/restart.png');
+        game.load.image('winner', 'assets/images/Winner.jpg');
     },
     
     //the create method is run after the preload method

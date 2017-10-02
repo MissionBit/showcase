@@ -5,7 +5,7 @@ var TitleScreen = {
     //it is where we load our assets
     preload : function() {
         //loads an image named 'logo'
-        game.load.image('logo', '/assets/images/mission_bit_logo.png');
+        game.load.image('logo', 'assets/images/mission_bit_logo.png');
         //loads an image named 'MathBackground'
         game.load.image('MathBackground', 'assets/images//mathbackground.gif');
         //loads an image named 'MathBackground'

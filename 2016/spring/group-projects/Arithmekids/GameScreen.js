@@ -42,14 +42,14 @@ var GameScreen = {
     //it is where we load our assets
     preload : function() {
         //loads an image named 'logo'
-        game.load.image('logo', '/assets/images/checkbutton.png');
-        game.load.image('square', '/assets/images/square-game.jpg');
-        game.load.image('correct', '/assets/images/greencorrect.png');
-        game.load.image('incorrect', '/assets/images/Red-Wrong.png');
-        game.load.image('nextLevel', '/assets/images/NextLevel.png');
-        game.load.image('mathbackground', '/assets/images/mathbackground.gif');
-        game.load.image('confetti', '/assets/images/confetti.gif');
-        game.load.image('restartButton', '/assets/images/restart.png');
+        game.load.image('logo', 'assets/images/checkbutton.png');
+        game.load.image('square', 'assets/images/square-game.jpg');
+        game.load.image('correct', 'assets/images/greencorrect.png');
+        game.load.image('incorrect', 'assets/images/Red-Wrong.png');
+        game.load.image('nextLevel', 'assets/images/NextLevel.png');
+        game.load.image('mathbackground', 'assets/images/mathbackground.gif');
+        game.load.image('confetti', 'assets/images/confetti.gif');
+        game.load.image('restartButton', 'assets/images/restart.png');
     },
     
     //the create method is run after the preload method
