@@ -11,7 +11,7 @@ var preload = {
 		this.game.load.image("gameTitle","Blockey Title.png");
 		this.game.load.image("play","playbutton.png");
 		this.game.load.image("enemy","blueEnemy.png");
-		this.game.load.image("gameOver", "GameOver.png")
+		this.game.load.image("gameOver", "gameover.png")
 	},
 	create: function(){
 		this.game.state.start("GameTitle");
