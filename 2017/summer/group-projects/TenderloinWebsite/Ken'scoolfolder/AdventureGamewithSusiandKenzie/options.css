@@ -1,0 +1,15 @@
+body {
+    background: linear-gradient(to right, aquamarine, teal);
+}
+
+p.title {
+    text-align: center; 
+    font-size: 50px;
+    font-family: cursive;
+    color: firebrick
+}
+
+p.details {
+    font-size: 30px; 
+    font-family: cursive;
+}

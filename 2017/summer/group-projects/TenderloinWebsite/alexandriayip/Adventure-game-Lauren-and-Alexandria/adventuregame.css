@@ -1,0 +1,17 @@
+
+body{
+    background: red;
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+}
+
+.hitchhiking{
+    text-indent: 40px;
+    font-size: 20px;
+}
+
+p.firstpage {font:cursive}
+

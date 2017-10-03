@@ -1,0 +1,101 @@
+body { 
+    background-color: #f5f5dc;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+
+#nav{
+    background-color: maroon;
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    }
+#nav > div{
+    display: inline-block;
+    padding-right: 50px;
+    padding: 20px 8px 20px 8px
+}
+#nav > div > a {
+    text-decoration: none;
+    color:white;
+}
+
+#nav>div>a:hover{
+    color: #c1c1c1
+}
+
+.top { 
+    font-size: 60px;
+    text-align: center;
+    color: maroon
+    
+}
+
+.nick {
+    font-size: 30px; 
+    text-align: center
+}
+
+.l { 
+    font-size: 20px; 
+    text-align:center; 
+}
+
+.his { 
+    font-size: 40px;
+    text-align: center;
+    color: maroon
+    
+}
+
+.timeline{
+    padding-left: 125px;
+}
+
+
+.hotspot {
+    position: absolute;
+}
+
+.hotspot + * {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.hotspot:hover + *{
+    opacity: 1;
+}
+
+.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.police { 
+font-size: 30px 
+}
+
+
+.bro {
+    font-size: 18px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

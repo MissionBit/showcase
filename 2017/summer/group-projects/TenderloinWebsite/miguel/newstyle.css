@@ -1,0 +1,65 @@
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+body {
+	background: grey;
+	text-align: center;
+}
+p.p1 {
+	color: paleturquoise;
+}
+.aboutMe{
+	color: black;
+	font-family: serif;
+}
+
+#welcome {
+	text-align: left;
+	padding: 10px;
+	background: white;
+	display: none
+}
+
+#main {
+	margin: 8px
+}
+body {
+	margin: 0px
+}
+
+button {
+	background-color: aqua; 
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button {
+	background-color: white; 
+    color: aqua; 
+    border: 2px solid aqua;
+}
+
+button:hover {
+	background-color: aqua;
+    color: white;
+}
+
+
+
+
+
+
+			
+			
+	

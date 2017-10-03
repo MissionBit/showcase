@@ -1,0 +1,22 @@
+.hello{
+    color: aquamarine;
+    font-size: 25px;
+    font-family: monospace;
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    text-indent: 50px;
+}
+
+body{
+    background: teal;
+}
+
+.goodbye{
+    font-family: fantasy;
+}
+
+.afternoon{
+    font-family: cursive;
+}

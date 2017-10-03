@@ -1,0 +1,17 @@
+body{
+    background: red
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+}
+
+.ferrari{
+    font-size: 20px;
+    text-indent: 40px;
+}
+
+#wrapper {
+    text-align: center;
+}

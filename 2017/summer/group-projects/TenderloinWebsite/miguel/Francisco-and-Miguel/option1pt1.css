@@ -1,0 +1,10 @@
+body {
+	background: grey
+}
+p {
+	font-size: 50px;
+}
+.top {
+	text-align: center;
+	font-size: 20px
+}

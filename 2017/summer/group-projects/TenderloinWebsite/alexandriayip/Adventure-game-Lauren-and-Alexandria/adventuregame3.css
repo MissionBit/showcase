@@ -1,0 +1,17 @@
+body{
+    background: red
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+}
+
+.jeep{
+    text-align: center;
+    font-size: 20px;
+}
+
+#wrapper {
+    text-align: center;
+}

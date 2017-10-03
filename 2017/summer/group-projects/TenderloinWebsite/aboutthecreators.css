@@ -1,0 +1,43 @@
+body { 
+    background-color: #f5f5dc;
+}
+
+#nav{
+    background-color: maroon;
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    }
+#nav > div{
+    display: inline-block;
+    padding-right: 50px;
+    padding: 20px 8px 20px 8px
+}
+#nav > div > a {
+    text-decoration: none;
+    color:white;
+}
+
+#nav>div>a:hover{
+    color: #c1c1c1
+}
+
+.about { 
+    text-align: center; 
+    color: maroon; 
+    font-size: 60px
+}
+
+.buttons {
+    text-align: center;
+}
+
+.click {
+    text-align: center;
+    font-family: monospace;
+}
+
+.rotate90 {
+    text-align: center;
+} 
+  

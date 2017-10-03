@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Mogra');
+
+body {
+    background: url(jellyfish.gif);
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+}
+
+p.opening {
+    color: coral;
+    text-shadow: 1px 1px 1px black;
+    font-size: 50px;
+} 
+ 
+     
+p.links {
+    font-size: 25px;
+    font-family: 'Mogra', cursive;
+    color:blueviolet;
+    text-shadow: 5px 5px 1px lightpink;
+}
+
+p.links > a {
+    display: inline-block;
+    padding-left: 20px;
+}
+
