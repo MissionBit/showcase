@@ -1,0 +1,24 @@
+body {
+    background-image: url(kitchen1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#back {
+    
+}
+.bridget {
+   display: flex;
+    align-items: flex-end;
+    bottom: 20%;
+    position: fixed;
+    left: 40%;
+}
+
+.orangearrow {
+    width: 30;
+    height: auto;
+}
+.rightorangearrow2 {
+     width: 30px;
+    height: auto;
+}

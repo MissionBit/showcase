@@ -1,0 +1,57 @@
+body {
+    background-image: url(jackbackground.jpg);
+    background-size: 100% 100%;
+
+    height: inherit;
+    width: inherit;
+
+    background-repeat: no-repeat;
+}
+
+.image{
+    position: absolute;
+    top: 625px;
+    left: 0;
+}
+
+.hotspot{
+    position: absolute;
+    border: 5px solid red;
+}
+
+.hotspot + * {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.hotspot:hover + *{
+    opacity: 1;
+}
+
+.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0; 
+    right: 0; 
+}
+
+.text{
+    color: white;
+}
+
+.car{
+    width: 175px;
+    height: 70px;
+    position: absolute;
+    top: 590px;
+    left: 275px;
+}
+
+.boy{
+    position: absolute;
+    top: 575px;
+    left: 600px;
+}
+
+

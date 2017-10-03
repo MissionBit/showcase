@@ -1,0 +1,123 @@
+body{
+                
+    background: cadetblue;
+    text-align: center;
+
+    
+                
+}
+#header {
+    font-family: monospace;
+    font-size: 75px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid dimgrey; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    
+}
+
+@keyframes typing {
+  from { 
+      width: 0 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink-caret {
+    from, to { 
+      border-color: transparent 
+    }
+    50% { 
+        border-color: dimgrey; 
+    }
+}
+            
+    
+.button1 {
+    text-align: justify;
+}
+
+#button2  {
+    text-align:justify;
+}
+
+#button3 {
+    text-align:justify;
+}
+
+.container{
+    text-align: center;
+}
+
+.wrap1 {
+    position: relative;
+    height:  235px;
+    width: 106px;
+    display: inline-block;
+    padding-right: 250px;
+}
+
+.text1 {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.8);
+    color: whitesmoke;
+    visibility: hidden;
+    opacity: 0;
+    height: 75px;
+    width: 200px;
+    
+    transition: opacity .2s, visibility .2s;
+}
+
+.wrap1:hover .text1 {
+    visibility: visible;
+    opacity: 5;
+}
+
+.wrap2 {
+    position: relative;
+    height:  235px;
+    width: 106px;
+    display: inline-block;
+    padding-right: 150px;
+}
+
+.text2 {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.8);
+    color: whitesmoke;
+    visibility: hidden;
+    opacity: 0;
+    height: 75px;
+    width: 200px;
+    
+    transition: opacity .2s, visibility .2s;
+}
+
+.wrap2:hover .text2 {
+    visibility: visible;
+    opacity: 5;
+    text-align: center
+}
+
+.button12{
+    text-align: center
+}
+
+
+
+
