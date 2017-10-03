@@ -1,0 +1,345 @@
+body 
+{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+}
+
+.container
+{
+   width:100%;
+   margin:auto;
+   overflow:hidden;
+   
+}
+
+.Abort
+{
+    min-height:650px;
+    background:url(space%20ship.png) no-repeat -800px -300px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.Abort h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.whatsup
+{
+    min-height:650px;
+    background:url(explore.jpg) no-repeat -1000px -500px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.whatsup h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.water
+{
+    min-height:650px;
+    background:url(water.jpg) no-repeat 0px 0px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.water h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+
+.hide
+{
+    min-height:650px;
+    background:url(hiding.jpg) no-repeat 0px -170px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.hide h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.common
+{
+    min-height:650px;
+    background:url(explore.jpg) no-repeat -1000px -500px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.common h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.drag
+{
+    min-height:650px;
+    background:url(drag.jpg) no-repeat -1100px -600px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.drag h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.die
+{
+    min-height:650px;
+    background:url(death.jpg) no-repeat 0px -100px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.die h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.medic
+{
+    min-height:650px;
+    background:url(Screen%20Shot%202017-06-29%20at%208.55.30%20PM.png) no-repeat 100px -100px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.medic h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.fire
+{
+    min-height:650px;
+    background:url(alien.jpg) no-repeat 0px -100px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.fire h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.die2
+{
+    min-height:650px;
+    background:url(Black.jpg) no-repeat 0px 0px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.die2 h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.self
+{
+    min-height:650px;
+    background:url(hahaha.jpg) no-repeat 0px 0px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.self h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+.des
+{
+    min-height:650px;
+    background:url(self.jpg) no-repeat 0px 0px ;
+    text-align: center;
+    color:#ffffff;
+    border-bottom: #35424a 50px solid;
+    border-top: #35424a 100px solid;
+}
+
+.des h1
+{
+    margin-left: auto;
+       margin-right: auto;
+       font-size: 55px;
+       margin-top:270px;
+       background-color: #35424a; 
+       width:60%;
+       opacity:0.6;
+       border-bottom: #e8491d 3px solid;
+}
+
+
+.description 
+{
+   background-color: #35424a; 
+   
+}
+
+.description div p 
+{
+   color:white;
+   font-size: 20;
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-top: auto;
+   margin-bottom: auto;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.boxes a
+{
+   text-decoration: none;
+   color:white;
+   padding: 200px 200px 200px 200px;
+   text-align: center;
+}
+
+.boxes .box 
+{
+   background-color: #39404a;
+   width: 50%;
+   margin:auto;
+   border-bottom: #009975 solid 5px;
+   float:left;
+}
+
+.boxes .box2 
+{
+   background-color: #39404a;
+   width: 50%;
+   margin:auto;
+   border-bottom: #0892D0 solid 5px;
+   float:left
+}
+
+.boxes .box3 
+{
+   background-color: #39404a;
+   width: 100%;
+   margin:auto;
+   border-bottom: #e8491d solid 5px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
