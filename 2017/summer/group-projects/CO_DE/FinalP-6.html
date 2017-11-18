@@ -1,0 +1,215 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Untitled-3.css">
+    <script src="FinalP-5.js"></script>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+    
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 2px  solid #ccc;
+    background-color:#00008B ;
+    width: 30%;
+    height: 1000px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 65px 60px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    color:white;
+    font-family:fantasy
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color:#4B0082;
+    
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color:#8A2BE2;
+    color:white
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 69%;
+    border-left: none;
+    height: 1000px;
+    
+}
+    
+    a {
+        
+        font-size:80px;
+        color:darkblue;
+/*        text-align: center;*/
+    }
+    
+    a:hover{
+        color:aliceblue
+    }
+   
+    h3{
+        font-size: 25px;
+        font-family: fantasy;
+    }
+    
+</style>
+</head>
+<body>
+    
+      <header>
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Untitled-1.html">Home</a>
+  <a href="FinalP-6.html">About</a>
+  <a href="Cportfolio.html">Portfolio</a>
+  <a href="FPcontact-12.html">Contact</a>
+</div>
+       <div id="main">
+           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+           
+</div>
+            
+</header>    
+
+<h1 style = "text-align:center; font-family:fantasy; color: white; font-size: 40px;">About Me</h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="aboutMe(event, 'Hobbies')" id="defaultOpen">My hobbies</button>
+  <button class="tablinks" onclick="aboutMe(event, 'Subject')">My favorite subject</button>
+  <button class="tablinks" onclick="aboutMe(event, 'Highschool')">What would I like to do after high school?</button>
+   <button class="tablinks" onclick="aboutMe(event, '10years')">Where do I see myself in 10 years?</button>
+    
+    <button class="tablinks" onclick="aboutMe(event, 'Agame')">My Adventure Game</button>
+    
+    <button class="tablinks" onclick="aboutMe(event, 'PhaserG')">My Phaser Game</button>
+  
+  
+</div>
+
+<div style = "background-color:#8A2BE2;" id="Hobbies" class="tabcontent">
+  <h3>&#9829;Taking photos<i style="font-size:24px" class="fa">&#xf083;</i></h3>
+    <p> I like to take photos of flowers, landcapes and my friends during my free time. Usually when there is an event at my school, I will take photos for the yearbook or photos to decorate the school. I also have a Instax camera, I use this camera to take photos and give it to the students and teachers at school.</p>
+    <p>You can see the photos I have taken on my portfolio. </p>
+    
+    
+    
+    
+    <h3>&#9829;Playing videogames <i style="font-size:24px" class="fa">&#xf11b;</i></h3>
+    <p> My favorite hobby is videogames, I have played videogames since I was 6 years old. Most of the time I play with my brother or friends.</p>
+    <p> One of my favorite game is Overwatch, which it is a FPS game. And another favorite game is Mobile Legend, which it is a MOBA game.</p>
+    
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/NkgvoXdEJ9w" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/2sWFhI9UJ1Q" frameborder="0" allowfullscreen></iframe>
+   
+    <h3>&#9829; Watching dramas</h3>
+  <p>I love watching Asian dramas, usually I watch Korean dramas and some Chinese dramas. That's how I learned some Korean and Chinese words.</p>
+    <p> These are the really cool websites I use to watch dramas:</p>
+    <a href =https://www.viki.com style= font-size:20px;>https://www.viki.com</a> 
+    <br>
+
+    <a href =https://www.dramafever.com style= font-size:20px;>https://www.dramafever.com</a>
+</div>
+
+<div style = "background-color:#8A2BE2;"id="Subject" class="tabcontent">
+  <h3>English Class is one of my favorite subject. </h3>
+  <p>I read a lot of books in this class. I didn't really like to read before, but in this class I learned tips to make the reading more interesting, such as making connections, inferences, inferences and predictions in a book. Also, these helped me understand better the books.  </p> 
+    
+    <h3>Some of the books I read were:</h3>
+ <img src = https://images-na.ssl-images-amazon.com/images/I/61MIxEqXpZL._SY346_.jpg    height="300" width="200"> 
+ <img src = https://images-na.ssl-images-amazon.com/images/I/51OKbj4XSxL._SX323_BO1,204,203,200_.jpg   height="300" width="200">
+<img src = https://images-na.ssl-images-amazon.com/images/I/512yyDfSEYL._SY346_.jpg    height="300" width="200">
+    
+    <img src = http://images.gr-assets.com/books/1327908992l/693208.jpg
+         height="300" width="200"> 
+    
+</div>
+
+<div style = "background-color:#8A2BE2;"id="Highschool" class="tabcontent">
+  <h3></h3>
+  <p>I am 12th grader at high school, I am planning to go to college. However, I stil can not decide what specific thing I want to study. The only thing I am sure is I want to study things connected to design. Some of my option are: Web Design, Graphic Design or Videogame Design. </p> 
+    <p> Since I still have time before going to college, I would like to use this time to experience different things and learn more about the careers and then choose what I really like and what I want to do for my future job.</p>
+</div>
+
+<div style = "background-color:#8A2BE2;"id="10years" class="tabcontent">
+  <h3></h3>
+    
+      <p>For me success is when I achieve my goals with all the efforts I make. Feeling successful is when I am happy on what I am doing in my career and my life. Therefore, I want to be someone who is happy because of her success in 10 years. </p>
+    
+    <p> In 10 years I see myself as someone who finished college and became a designer for a company. Someone who achieved many of her goals and wants to set new goals for her life. </p>
+    <p>When I already earn enough money, I will travel some part of the world to learn more about cultures and take many photos of those places. This is one of my dream now, hopefully I want to be able to achieve this dream in 10 years. Also, I see myself able to speak well four languages; English, Spanish, Cantonese and Mandarin. I set this goal now and I believe I will achieve this goal in the future.  </p>
+</div>
+    
+<div style = "background-color:#8A2BE2;" id="Agame" class="tabcontent">
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br>
+   
+  <a href = "Adventure-Game/Untitled-5.html"> &#8594;Click here to see my adventure game</a>
+</div>
+
+    <div style = "background-color:#8A2BE2;"id="PhaserG" class="tabcontent">
+        <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br>
+   
+  <a href= "phaser/index.html">&#8594;Click here to see my phaser game</a>
+</div>
+        
+
+<script>
+function aboutMe(evt, aboutMe) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(aboutMe).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+    
+    
+    
+</body>
+</html> 

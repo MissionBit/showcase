@@ -1,0 +1,125 @@
+<html>
+
+<html>
+    <head>
+            <link rel="stylesheet" href="Untitled-3.css">
+    <script src="FinalP-5.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+    
+    button {
+        color:white;
+     font-family: fantasy;
+        font-size:25px;
+    }
+    h1 {
+        color:white;
+        text-align: center;
+        font-family: fantasy;
+    }
+</style>
+        
+        
+    </head>
+<body style= height:300%;>
+ <header>
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+       
+       <a href="Untitled-1.html">Home</a>
+       <a href="FinalP-6.html">About</a>
+  <a href="FPportfolio-4.html">Portfolio</a>
+  <a href="FPcontact-12.html">Contact</a>
+</div>
+       <div id="main">
+           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+     
+     
+     
+     
+            
+</header> 
+
+
+
+    
+    
+    
+    
+<div class="w3-container">
+  <h1>Portfolio</h1>
+  <p></p>
+</div>
+
+<div class="w3-content" style="max-width:1000px; height:600px"> 
+  <img class="mySlides" src="IMG_2465.JPG" style="width:100%"> 
+  <img class="mySlides" src="IMG_2496.JPG" style="width:100%"> 
+  <img class="mySlides" src="IMG_2501.JPG" style="width:100%">
+    <img class="mySlides" src="IMG_2773.JPG" style="width:100%">
+    <img class="mySlides" src="IMG_2808.JPG" style="width:100%">
+    <img class="mySlides" src="IMG_2530.JPG" style="width:100%">
+    <img class="mySlides" src="IMG_2540.JPG" style="width:100%">
+    <img class="mySlides" src="IMG_2625.JPG" style="width:100%">
+     <img class="mySlides" src="IMG_2636.JPG" style="width:100%">
+     <img class="mySlides" src="" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-black" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-black" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+     <button class="w3-button demo" onclick="currentDiv(3)">4</button>
+     <button class="w3-button demo" onclick="currentDiv(3)">5</button>
+     <button class="w3-button demo" onclick="currentDiv(3)">6</button>
+     <button class="w3-button demo" onclick="currentDiv(3)">7</button>
+     <button class="w3-button demo" onclick="currentDiv(3)">8</button>
+     <button class="w3-button demo" onclick="currentDiv(3)">9</button>
+    
+    
+    
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-black", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-black";
+}
+</script>
+
+</body>
+</html>
+
+
+    
+</html>

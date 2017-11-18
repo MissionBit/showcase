@@ -1,0 +1,23 @@
+<html> 
+    <head>
+        <script src= "phaser.min.js"></script>
+        <script src="mainState.js"></script>
+        
+        <script>
+         (function() {
+             var game = new Phaser.Game(500,200, Phaser.CANVAS,"game");  
+             
+            game.state.add("state1",mainState);
+             
+             game.state.start("state1"); 
+             
+         })(); 
+            
+        </script>
+    </head>
+    
+    <body> 
+    </body>
+    
+    
+</html>
