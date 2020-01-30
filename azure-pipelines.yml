@@ -240,7 +240,29 @@ jobs:
                 echo "$($validPrefix.Count) valid blob prefixes"
                 $earlier = (Get-Date).AddHours(-6).ToUniversalTime().toString("yyyy-MM-ddThh:mm:ssZ")
                 $prefixes = (az storage blob list -c '$web' --account-name=missionbitshowcase --delimiter / | ConvertFrom-Json)
+
+                $ScriptBlock = {
+                  Param(
+                    [string] [Parameter(Mandatory=$true)] $earlier,
+                    [string] [Parameter(Mandatory=$true)] $prefix
+                  )
+                  Write-Host "Deleting unused blob prefix $prefix* before $earlier"
+                  az storage blob delete-batch --source '$web' --account-name=missionbitshowcase --pattern="$prefix*" --if-unmodified-since $earlier
+                  $prefix
+                }
+                #Remove all jobs
+                Get-Job | Remove-Job
+                $MaxJobs = 4
+                #Start the jobs. Max 4 jobs running simultaneously.
                 $prefixes.name.where({ -Not $validPrefix.ContainsKey($_) }).ForEach({
-                  echo "Deleting unused blob prefix $_*"
-                  az storage blob delete-batch --source '$web' --account-name=missionbitshowcase --pattern="$_*" --if-unmodified-since $earlier
+                  Write-Host "Queueing delete for $_"
+                  While ($(Get-Job -State "Running").count -ge $MaxJobs){
+                    Start-Sleep 5
+                  }
+                  Start-Job $ScriptBlock -ArgumentList $earlier $_
                 })
+                While (Get-Job -State "Running") {
+                  Start-Sleep 10
+                }
+                Get-Job | Receive-Job
+                Remove-Job *
