@@ -5,11 +5,11 @@
     on open-ended projects. A few of them are hard to demo online, but
     here are some fun ones!"
   projects:
-    - path: mission-animate
+    - path: mission-animate/
       name: Mission Animate
       description:
         "Draw your own animated GIFs!"
-    - path: video-game
+    - path: video-game/
       name: Robot Dinosaur vs. Nazi Zombies
       description:
         "Help the Robot Dinosaur defeat all of the Nazi Zombies with its
@@ -24,13 +24,13 @@
     the opportunity to think about how to structure a site with a
     lot of separate pages."
   projects:
-    - path: cjlim2007
+    - path: cjlim2007/
       name: "Chris's RPG"
-    - path: farrah0228
+    - path: farrah0228/
       name: "Farrah's Winter Wonderland"
-    - path: magicallilicorn
+    - path: magicallilicorn/
       name: "Lily's Escape"
-    - path: theotherjustin
+    - path: theotherjustin/
       name: "Justin's Frozen Adventure"
 - name: Spring 2014 Group Projects
   path: 2014/spring/group-projects
@@ -38,16 +38,16 @@
     "For their end of semester projects, most of the groups decided to
     build games of their own design!"
   projects:
-    - path: food-stacker
+    - path: food-stacker/
       name: Food Stacker
       description:
         "Catch the good food and avoid the bad stuff.
         Works on mobile devices too!"
-    - path: operation-peach
+    - path: operation-peach/
       name: Operation Peach
       description:
         "Help Princess Peach escape the castle on her own!"
-    - path: veggie-jump
+    - path: veggie-jump/
       name: "Endless Jump"
       description:
         "A crazy endless runner. Can you get over 9000?"
@@ -57,11 +57,11 @@
     "For their end of semester projects, most of the groups decided to
     build games of their own design with the Phaser HTML5 game framework!"
   projects:
-    - path: hexbit
+    - path: hexbit/
       name: hexbit
       description:
         "Two player turn-based strategy game. Take over the map to win!"
-    - path: jlaw
+    - path: jlaw/
       name: jlaw
       description:
         "Jennifer Lawrence broke the law and is escaping from enemies who altered
@@ -73,7 +73,7 @@
         "Fire Emblem based RPG"
 
 - name: Fall 2015 Group Projects
-  path: 2015/fall/group-projects
+  path: 2015/fall/group-projects/
   description:
     "For their end of semester projects, most of the groups decided to
     build games of their own design with the Phaser HTML5 game framework!"
@@ -89,7 +89,7 @@
     "For their end of semester projects, most of the groups decided to
     build games of their own design with the Phaser HTML5 game framework!"
   projects:
-    - path: FunChess
+    - path: FunChess/
       name: FunChess
       description:
         "Fun chess."
@@ -104,15 +104,15 @@
     "For their end of semester projects, most of the groups decided to
     build games of their own design with the Phaser HTML5 game framework!"
   projects:
-    - path: gamefolder
+    - path: gamefolder/
       name: "Color Karma"
       description:
         "Play with some puzzling colored squares"
-    - path: Hardcore-Hoops
+    - path: Hardcore-Hoops/
       name: "Hardcore Hoops"
       description:
         "Shoot some hoops if you dare"
-    - path: The-best-side-scroller
+    - path: The-best-side-scroller/
       name: "The best side scroller"
       description:
         "Its really hard, I promise"
@@ -123,15 +123,15 @@
     "For their end of semester projects, most of the groups decided to
     build games of their own design with the Phaser HTML5 game framework!"
   projects:
-    - path: inkorporated
+    - path: inkorporated/
       name: Inkorporated
       description:
         "Inkorporated, Inc. sells pens."
-    - path: tilegame
+    - path: tilegame/
       name: "tilegame"
       description:
         "RPG clone"
-    - path: the-best-sidescroller2
+    - path: the-best-sidescroller2/
       name: "Mario's Revenge"
       description:
         "Mario is back and he's mad"

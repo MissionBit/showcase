@@ -1,0 +1,17 @@
+name: Jekyll site CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build the site in the jekyll/builder container
+      run: |
+        export BINARIES_DIRECTORY="${{ github.workspace }}/_site"
+        export SOURCES_DIRECTORY="${{ github.workspace }}"
+        mkdir -p "$BINARIES_DIRECTORY"
+        docker-compose -f docker-compose-ci.yml up --abort-on-container-exit --exit-code-from ci

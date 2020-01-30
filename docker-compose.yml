@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    tty: true
+    stdin_open: true
+    image: jekyll/builder:latest
+    environment:
+      - PORT=4001
+    ports:
+      - "4001:4001"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ./docker-start.sh

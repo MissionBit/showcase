@@ -1,7 +1,19 @@
+exclude:
+  - ci
+  - azure-pipelines.yml
+  - .gitignore
+  - .editorconfig
+  - Dockerfile
+  - Dockerfile.web
+  - docker-compose.yml
+  - docker-compose-ci.yml
+  - docker-start.sh
+  - docker-ci.sh
+  - README.md
 defaults:
   - scope:
       path: ""
-      type: "post"
+      type: "posts"
     values:
       layout: "default"
 
