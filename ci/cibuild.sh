@@ -2,6 +2,7 @@
 set -e
 DESTINATION="${DESTINATION:-./_site}"
 jekyll build -d "${DESTINATION}" --trace
+
 # htmlproofer "${DESTINATION}" \
 #     --allow-hash-href \
 #     --empty-alt-ignore \
