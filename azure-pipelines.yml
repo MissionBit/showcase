@@ -147,6 +147,18 @@ jobs:
                 az network front-door routing-rule create --front-door-name missionbit-showcase --resource-group www --accepted-protocols Https --forwarding-protocol HttpsOnly --name serve-content --backend-pool blob --frontend-endpoints missionbit-showcase-azurefd-net showcase-missionbit-org --route-type Forward --custom-forwarding-path "/$env:Build_SourceVersion/" --dynamic-compression Enabled --caching Enabled --query-parameter-strip-directive StripNone
                 echo "Purging cache for missionbit-showcase"
                 az network front-door purge-endpoint -g www -n missionbit-showcase --content-paths '/*'
+          - task: GitHubDeployment@0
+            inputs:
+              gitHubConnection: github.com_etrepum
+              repositoryName: $(Build.Repository.Name)
+              ref: $(Build.SourceVersion)
+              task: "deploy"
+              environment: production
+              description: "$(Build.SourceVersionMessage)"
+              state: 'success'
+              logUrl: https://showcase.missionbit.org/
+              environmentUrl: https://showcase.missionbit.org/
+              autoInactive: true
 
   - deployment: DeployMasterCleanupDev
 
