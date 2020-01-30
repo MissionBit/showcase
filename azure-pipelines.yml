@@ -10,16 +10,9 @@ jobs:
   - job: Build
 
     pool:
-      vmImage: ubuntu-latest
+      vmImage: windows-latest
 
     steps:
-    - task: Bash@3
-      inputs:
-        targetType: 'inline'
-        script: |
-          chmod 777 "$BINARIES_DIRECTORY"
-      env:
-        BINARIES_DIRECTORY: $(Build.BinariesDirectory)
     - task: DockerCompose@0
       displayName: 'Run Jekyll & Test Links'
       inputs:
@@ -32,35 +25,15 @@ jobs:
         projectName: $(Build.Repository.Name)
         abortOnContainerExit: true
         detached: false
-    - task: PublishBuildArtifacts@1
-      displayName: Publish Site
+    - task: AzureFileCopy@3
+      condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/gh-pages'), eq(variables['Build.Reason'], 'PullRequest')))
       inputs:
-        artifactName: www
-        pathtoPublish: $(Build.BinariesDirectory)
-
-  - deployment: UploadArtifact
-
-    environment: www-dev
-    pool:
-      vmImage: windows-latest
-    dependsOn: Build
-    condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/gh-pages'), eq(variables['Build.Reason'], 'PullRequest')))
-
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - download: current
-            artifact: www
-          - checkout: none
-          - task: AzureFileCopy@3
-            inputs:
-              sourcePath: $(Pipeline.Workspace)/www
-              azureSubscription: $(azureSubscription)
-              destination: azureBlob
-              storage: missionbitshowcase
-              containerName: '$web'
-              blobPrefix: $(Build.SourceVersion)
+        sourcePath: $(Build.BinariesDirectory)
+        azureSubscription: $(azureSubscription)
+        destination: azureBlob
+        storage: missionbitshowcase
+        containerName: '$web'
+        blobPrefix: $(Build.SourceVersion)
 
   - deployment: DeployPR
 
@@ -68,7 +41,7 @@ jobs:
     pool:
       # windows-latest not currently compatible with AzureCLI@2
       vmImage: vs2017-win2016
-    dependsOn: UploadArtifact
+    dependsOn: Build
     condition: and(succeeded(), eq(variables['Build.Reason'], 'PullRequest'))
     variables:
       prHost: pr$(system.pullRequest.pullRequestNumber).dev.showcase.missionbit.org
@@ -123,7 +96,7 @@ jobs:
     pool:
       # windows-latest not currently compatible with AzureCLI@2
       vmImage: vs2017-win2016
-    dependsOn: UploadArtifact
+    dependsOn: Build
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/gh-pages'))
     strategy:
       runOnce:
@@ -166,7 +139,7 @@ jobs:
     pool:
       # windows-latest not currently compatible with AzureCLI@2
       vmImage: vs2017-win2016
-    dependsOn: UploadArtifact
+    dependsOn: Build
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/gh-pages'))
     strategy:
       runOnce:
