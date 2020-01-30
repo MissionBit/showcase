@@ -142,7 +142,7 @@ jobs:
                 az storage blob service-properties update --account-name missionbitshowcase --static-website --404-document "$(Build.SourceVersion)/404.html"
                 az extension add --name front-door
                 echo "Updating missionbit-showcase-dev routing-rule serve-content to /$env:Build_SourceVersion/"
-                az network front-door routing-rule create -f missionbit-showcase-dev -g www-dev --accepted-protocols Https --forwarding-protocol HttpsOnly -n serve-content --backend-pool blob --frontend-endpoints missionbit-showcase-dev-azurefd-net --route-type Forward --custom-forwarding-path "/$env:Build_SourceVersion/"
+                az network front-door routing-rule create --front-door-name missionbit-showcase-dev --resource-group www-dev --accepted-protocols Https --forwarding-protocol HttpsOnly --name serve-content --backend-pool blob --frontend-endpoints missionbit-showcase-dev-azurefd-net --route-type Forward --custom-forwarding-path "/$env:Build_SourceVersion/"
                 echo "Updating missionbit-showcase routing-rule serve-content to /$env:Build_SourceVersion/"
                 az network front-door routing-rule create --front-door-name missionbit-showcase --resource-group www --accepted-protocols Https --forwarding-protocol HttpsOnly --name serve-content --backend-pool blob --frontend-endpoints missionbit-showcase-azurefd-net showcase-missionbit-org --route-type Forward --custom-forwarding-path "/$env:Build_SourceVersion/" --dynamic-compression Enabled --caching Enabled --query-parameter-strip-directive StripNone
                 echo "Purging cache for missionbit-showcase"
@@ -230,4 +230,18 @@ jobs:
                   az network front-door routing-rule delete -g www-dev -f missionbit-showcase-dev -n $_.name
                   echo "Removing frontend endpoint $($_.hostName)"
                   az network front-door frontend-endpoint delete -g www-dev -f missionbit-showcase-dev -n $_.name
+                })
+
+                echo "Cleaning up blob storage"
+                $routes = (az network front-door routing-rule list -f missionbit-showcase-dev -g www-dev | ConvertFrom-Json)
+                $validPrefix = @{ "$env:Build_SourceVersion/" = $true }
+                $routes.routeConfiguration.customForwardingPath.where({ $_ }).ForEach({
+                  $validPrefix[$_.TrimStart("/")] = $true
+                })
+                echo "$($validPrefix.Count) valid blob prefixes"
+                $earlier = (Get-Date).AddHours(-6).ToUniversalTime().toString("yyyy-MM-ddThh:mm:ssZ")
+                $prefixes = (az storage blob list -c '$web' --account-name=missionbitshowcase --delimiter / | ConvertFrom-Json)
+                $prefixes.name.where({ -Not $validPrefix.ContainsKey($_) }).ForEach({
+                  echo "Deleting unused blob prefix $_*"
+                  az storage blob delete-batch --source '$web' --account-name=missionbitshowcase --pattern="$_*" --if-unmodified-since $earlier --dryrun
                 })
