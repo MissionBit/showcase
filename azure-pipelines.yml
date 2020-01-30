@@ -243,5 +243,5 @@ jobs:
                 $prefixes = (az storage blob list -c '$web' --account-name=missionbitshowcase --delimiter / | ConvertFrom-Json)
                 $prefixes.name.where({ -Not $validPrefix.ContainsKey($_) }).ForEach({
                   echo "Deleting unused blob prefix $_*"
-                  az storage blob delete-batch --source '$web' --account-name=missionbitshowcase --pattern="$_*" --if-unmodified-since $earlier --dryrun
+                  az storage blob delete-batch --source '$web' --account-name=missionbitshowcase --pattern="$_*" --if-unmodified-since $earlier
                 })
