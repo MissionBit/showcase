@@ -35,7 +35,7 @@ jobs:
     - publish: $(Build.BinariesDirectory)
       artifact: www
       displayName: Publish Site
-      condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/gh-pages'), eq(variables['Build.Reason'], 'PullRequest')))
+      condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq(variables['Build.Reason'], 'PullRequest')))
 
   - deployment: UploadArtifact
 
@@ -43,7 +43,7 @@ jobs:
     pool:
       vmImage: windows-latest
     dependsOn: Build
-    condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/gh-pages'), eq(variables['Build.Reason'], 'PullRequest')))
+    condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq(variables['Build.Reason'], 'PullRequest')))
 
     strategy:
       runOnce:
@@ -143,7 +143,7 @@ jobs:
       # windows-latest not currently compatible with AzureCLI@2
       vmImage: vs2017-win2016
     dependsOn: UploadArtifact
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/gh-pages'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
     strategy:
       runOnce:
         deploy:
@@ -186,7 +186,7 @@ jobs:
       # windows-latest not currently compatible with AzureCLI@2
       vmImage: vs2017-win2016
     dependsOn: UploadArtifact
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/gh-pages'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
     strategy:
       runOnce:
         deploy:
