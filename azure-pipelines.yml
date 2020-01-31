@@ -109,7 +109,7 @@ jobs:
       # windows-latest not currently compatible with AzureCLI@2
       vmImage: vs2017-win2016
     dependsOn:
-    - Build
+    - DeployPR
     - UploadArtifact
     condition: and(succeeded(), eq(variables['Build.Reason'], 'PullRequest'))
     variables:
