@@ -10,3 +10,5 @@ services:
     command: ./docker-ci.sh
     environment:
       - DESTINATION=/site
+      - JEKYLL_GID=0
+      - JEKYLL_UID=0
