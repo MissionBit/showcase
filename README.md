@@ -1,7 +1,7 @@
 # showcase.missionbit.org
 
 This is the source for showcase.missionbit.org!
-We use [Jekyll] to help us generate www.missionbit.org because that's
+We use [Jekyll] to help us generate showcase.missionbit.org because that's
 what [GitHub Pages] uses. This lets us build a site with a lot of
 pages without having to repeat so much over and over.
 
@@ -58,18 +58,20 @@ named directories such as `2014/spring/adventure`.
   description of the assignment, as well as the list of student
   projects for that assignment.
 
-## Azure Deployment
+## Netlify Deployment
 
-The site is automatically built with [Azure Pipelines].
+The site is deployed by Netlify for both production and PR deployment previews.
 
-On a successful build of the master branch, the DeployMasterCDN
-pipeline job publishes the build artifacts to Azure Blob Storage and then
-modifies the CDN configuration to use this path as the new website.
+The Netlify dashboard is at
+[app.netlify.com/sites/missionbit-showcase/overview](https://app.netlify.com/sites/missionbit-showcase/overview).
+Contact bob@missionbit.org or cora@missionbit.org if you need access to this
+team for some reason.
 
-Note that since the same blob store is used for all front-ends,
-changes to the 404.html page only occur after merging to master.
+DNS is currently hosted by
+Cloudflare (missionbit.com) or
+Azure (missionbit.org, missionbits.com, missionbits.org).
+We may choose to consolidate these or move them to Netlify.
 
-[Azure Pipelines]: https://dev.azure.com/missionbit/www.missionbit.com/
 [Docker Desktop]: https://www.docker.com/products/docker-desktop
 [Jekyll]: http://jekyllrb.com/
 [GitHub Pages]: https://pages.github.com/
